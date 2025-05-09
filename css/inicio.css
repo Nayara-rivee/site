@@ -1331,10 +1331,9 @@ right: -30px;
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background-color: #f8f9fa;
   overflow: hidden;
   position: relative;
-  top: 10px;
+  top: 100px;
 }
 
 .carousel-slide {
@@ -1342,9 +1341,7 @@ right: -30px;
   height: 100%;
 }
 
-.carousel-inner, .carousel-item {
-  height: 100%;
-}
+
 
 .carousel-content {
   display: flex;
@@ -1468,6 +1465,31 @@ right: -30px;
     position: relative;
     left: 200px;
   }
+}
+
+/* serviços */
+:root {
+  --azul: #6EC1E4;
+  --roxo: #CBA6F7;
+  --escuro: #111111;
+  --claro: #ffffff;
+}
+.bg-escuro { background-color: var(--escuro); }
+.bg-roxo { background-color: var(--roxo); }
+.bg-azul { background-color: var(--azul); }
+
+.text-escuro { color: var(--escuro); }
+.text-roxo { color: var(--roxo); }
+.text-azul { color: var(--azul); }
+.text-claro { color: var(--claro); }
+
+.hover\:text-roxo:hover { color: var(--roxo); }
+.hover\:bg-roxo:hover { background-color: var(--roxo); }
+.hover\:bg-azul:hover { background-color: var(--azul); }
+
+.servicos{
+  position: relative;
+  top: 200px;
 }
 
 /* portfolio */

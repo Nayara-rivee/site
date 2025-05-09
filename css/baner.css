@@ -1,14 +1,14 @@
   .hero {
     position: relative;
-    background-image: url('../img/fundo.avif');
+
     background-size: cover;
     background-position: center;
-    height:500px;
+    height:200px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    top: 230px;
+    top: 30px;
 
   }
   

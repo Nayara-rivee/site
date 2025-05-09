@@ -13,8 +13,8 @@ $usuarioLogado = isset($_SESSION['email']);
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/home.css" />
-  <link rel="stylesheet" href="./css/banner.css">
+  <link rel="stylesheet" href="./css/inicio.css" />
+  <link rel="stylesheet" href="./css/baner.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -94,9 +94,6 @@ $usuarioLogado = isset($_SESSION['email']);
       </div>
     <?php else: ?>
       <div>
-        <a href="login.php"><button class="cadastrar" type="submit">Cadastrar-se</button></a>
-      </div>
-      <div>
         <a href="login.php"><button class="login" type="submit">Login</button></a>
       </div>
     <?php endif; ?>
@@ -161,35 +158,32 @@ $usuarioLogado = isset($_SESSION['email']);
   <br><br><br><br><br>
 
 
-  <!-- Serviços -->
-  <div class="divs">
-
-    <div class="div1">
-      <div class="titulo-div">
-        <h5>Seja livre para criar o que quiser!</h5>
+  <!-- Seção Serviços -->
+  <section class="servicos py-36 bg-white text-white">
+    <div class="container">
+      <h2 class="text-center text-3xl md:text-4xl font-bold mb-12 text-black">Nossos Serviços</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
+            <h3 class="text-xl font-bold mb-2">Sites Responsivos</h3>
+            <p>Sites que se adaptam a qualquer dispositivo, proporcionando a melhor experiência ao usuário.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
+            <h3 class="text-xl font-bold mb-2">Lojas Virtuais</h3>
+            <p>Comércio eletrônico moderno com design atrativo e ferramentas para aumentar suas vendas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
+            <h3 class="text-xl font-bold mb-2">Otimização SEO</h3>
+            <p>Melhoramos o posicionamento do seu site no Google e atraímos mais visitantes qualificados.</p>
+          </div>
+        </div>
       </div>
-      <div class="descricao-div1">
-        <p>
-          Separe um tempinho do seu dia para aprender conosco! Além de aprender,
-          em seus projetos você que dará seu toque pessoal, registrando sua
-          marca, um pedaçinho de si mesmo naquele trabalho que talvez tenha uma
-          dificuldade no que fazer
-        </p>
-      </div>
-      <img src="./img/folhinha.png" alt="">
     </div>
-    <div class="div2">
-      <h5>Sem criatividade?</h5>
-      <p>Geralmente o bloqueio criativo se da pela:</p>
-    </div>
-    <div class="div3">
-      <h1>Como melhorar essa situação?</h1>
-      <h5>
-        Praticar cada vez mais sua criatividade, é mais uma etapa de se
-        crescer!
-      </h5>
-    </div>
-  </div>
+  </section>
   <!-- <section id="servicos" class="secao-servicos">
     <h3 class="titulo-secao">Nossos Serviços</h3>
     <div class="grid-servicos">
@@ -229,18 +223,11 @@ $usuarioLogado = isset($_SESSION['email']);
               <a href="planoseprodutos.php" class="link"><button class="botao-criar">Criar website</button></a>
             </div>
             <div class="carousel-image">
-              <img src="./img/obrigado.png" alt="Imagem 1">
+              <img src="./img/planos.svg" alt="Imagem 1">
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="carousel-content">
-            <div class="carousel-text">
-              <h2>Receba 20% de desconto</h2>
-              <p>Utilize nossos cupons Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore ducimus necessitatibus, reprehenderit laborum tempora a laboriosam debitis, dignissimos porro similique alias tempore voluptates ullam quae. Aspernatur explicabo error minus delectus?</p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>

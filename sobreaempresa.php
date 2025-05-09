@@ -407,8 +407,8 @@
 
         .right-image {
             position: absolute;
-            right: 710px;
-            bottom: -2050px;
+            right: 510px;
+            bottom: -2250px;
             width: 250px;
             height: 200px;
             border: 5px solid #2b2b2b;
