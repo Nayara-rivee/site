@@ -584,7 +584,7 @@ $usuarioLogado = isset($_SESSION['email']);
     <div class="container2">
       <div class="portfolio">
         <a href="https://www.exemplo.com/projeto1" class="card" target="_blank">
-          <img src="./img/imagem2.jpeg" alt="Projeto 1">
+          <img src="./img/projeto1.jpeg" alt="Projeto 1">
           <div class="card-content">
             <h2>Consultoria de TI</h2>
             <p>Oferecendo soluções estratégicas de TI para empresas de todos os portes.</p>
@@ -592,7 +592,7 @@ $usuarioLogado = isset($_SESSION['email']);
         </a>
 
         <a href="https://www.exemplo.com/projeto2" class="card" target="_blank">
-          <img src="./img/imagem1.jpeg" alt="Projeto 2">
+          <img src="./img/projeto2.jpeg" alt="Projeto 2">
           <div class="card-content">
             <h2>Website de E-commerce</h2>
             <p>Desenvolvimento de loja online customizada e otimizada para vendas.</p>
