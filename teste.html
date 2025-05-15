@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .carousel-wrapper {
+            position: relative;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            z-index: 2;
+        }
+
+        .carousel-control-prev {
+            left: 55%;
+        }
+
+        .carousel-control-next {
+            right: 0;
+        }
+
+        .carousel.carousel-fade .carousel-item {
+            transition: opacity 1s ease-in-out;
+        }
+
+        
+          .extras-section {
+      background-color: #f8f9fa;
+      padding: 40px;
+      border-radius: 10px;
+      color: #1a1a1a;
+      margin: 60px auto;
+      max-width: 900px;
+    }
+
+    .extras-title {
+      font-size: 32px;
+      color: #14121f;
+      margin-bottom: 10px;
+    }
+
+    .extras-subtitle {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .extras-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 18px;
+    }
+
+    .extras-list li {
+      margin-bottom: 10px;
+      padding-left: 1.5em;
+      position: relative;
+    }
+
+    .extras-list li::before {
+      content: "✔️";
+      color: #b192f5;
+      font-size: 1.2em;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="container py-5">
+        <div id="carouselPlanos" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-wrapper">
+                <div class="carousel-inner">
+                    <!-- Slide 1 - Plano Básico -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="fw-bold">Plano Básico</h2>
+                                <p class="text-muted">Ideal para quem está começando</p>
+                                <ul>
+                                    <li>Site simples de 1 página</li>
+                                    <li>Responsivo</li>
+                                    <li>Suporte por e-mail</li>
+                                    <li>R$ 399,00</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 position-relative">
+                                <img src="./img/imagem1.jpeg" class="d-block w-100 rounded shadow" alt="Plano Básico" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - Plano Intermediário -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="fw-bold">Plano Intermediário</h2>
+                                <p class="text-muted">Para pequenas empresas</p>
+                                <ul>
+                                    <li>Site com até 5 páginas</li>
+                                    <li>Design personalizado</li>
+                                    <li>Suporte por WhatsApp</li>
+                                    <li>R$ 799,00</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 position-relative">
+                                <img src="./img/imagem2.jpeg" class="d-block w-100 rounded shadow"
+                                    alt="Plano Intermediário" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 - Plano Profissional -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="fw-bold">Plano Profissional</h2>
+                                <p class="text-muted">
+                                    Para empresas que precisam de mais recursos
+                                </p>
+                                <ul>
+                                    <li>Site completo com blog</li>
+                                    <li>SEO e Analytics</li>
+                                    <li>Hospedagem e domínio</li>
+                                    <li>R$ 1.299,00</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 position-relative">
+                                <img src="./img/imagem1.jpeg" class="d-block w-100 rounded shadow"
+                                    alt="Plano Profissional" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botões de navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlanos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPlanos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="extras-section container mt-5">
+    <h2 class="extras-title">Serviços Extras</h2>
+    <p class="extras-subtitle">Itens adicionais que podem ser combinados com qualquer plano:</p>
+    <ul class="extras-list">
+      <li>✅ Versão em inglês/espanhol (tradução + layout) — <strong>+ R$ 398</strong></li>
+      <li>✅ Design de ícones e logotipo simples — <strong>R$ 150 - R$ 299</strong></li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -25,10 +25,12 @@
   
   .dropdown-menu{
     width: 300px;
+
   }
 
-  .dropdown-menu .dropdown-item{
+  .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item{
     width: 100px;
+    color: #44438f;
   }
   /* botão de login */
   

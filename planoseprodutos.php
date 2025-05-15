@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/planos.css">
+  <link rel="stylesheet" href="./css/planoss.css">
   <title>Document</title>
 
   <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="./css/responsive3.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="./css/home.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -24,257 +24,174 @@
 
 <body>
 
-
-  <nav class="navbar navbar-expand-lg bg-body-primary bg-dark">
-    <div>
-      <a href="index.php"><button class="voltar" type="submit">home</button></a>
-    </div>
-
-    <div class="container3 container-fluid">
-      <a class="navbar-brand" href="index.php"><b class="text-white">AuroraIT</b></a>
-      <ul class="itens">
-        <li class="nav_itens">
-          <a href="#">cupons</a>
-        </li>
-        <li class="nav_itens">
-          <a href="#">já adquiridos</a>
-        </li>
-      </ul>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="./img/logo.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav flex-grow-1">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Produtos e Planos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="planoseprodutos.php">Planos</a></li>
+              <li><a class="dropdown-item" href="planoseprodutos.php">Produtos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Recursos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#redes">Redes</a></li>
+              <li><a class="dropdown-item" href="planoseprodutos.php">Modelos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="faleconosco.php">Fale conosco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#div-empresa">Sobre a embresa</a>
+          </li>
+          <?php if ($usuarioLogado): ?>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cliente.php">Minha conta</a>
+            </li>
+          <?php endif; ?>
+
         </ul>
-        <div class="align-self-end">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="login.php" class="nav-link text-black text-white">
-                <p>Entrar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <span class="badge rounded-pill bg-white text-white position-relative ms-4 mt-0 "
-                title="5 produto(s) no carrinho"><small class="text-black">5</small></span>
-              <a href="carrinho.php" class="nav-link text-white">
-                <i class='bx bxs-cart-alt'></i>
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
+    <!-- <div class="button">
+      <div class="ball"></div>
+    </div> -->
+    <div class="theme-container">
+      <button id="theme-toggle" class="theme-toggle">
+        <i id="theme-icon" class='bx bx-moon theme-icon'></i>
+      </button>
+
+    </div>
+
+    <?php if ($usuarioLogado): ?>
+      <div>
+        <a href="sair.php"><button class="logout" type="submit">Desconectar-se</button></a>
+      </div>
+    <?php else: ?>
+      <div>
+        <a href="login.php"><button class="login" type="submit">Login</button></a>
+      </div>
+    <?php endif; ?>
 
   </nav>
 
-  <div class="nossos-planos">
-    <h1> Planos e Produtos</h1>
-    <p>Templates e preços</p>
-  </div>
-  <div class="cursos">
-    <div class="carrossel">
-      <!-- Slides -->
-      <div class="slides">
-        <div class="slide ativo">Slide 1</div>
-        <div class="slide">Slide 2</div>
-        <div class="slide">Slide 3</div>
-      </div>
-
-      <!-- Botões de navegação -->
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
+  <div class="planos">
+    <div class="nossos-planos">
+      <h1> Planos e Produtos</h1>
+      <p>Templates e preços</p>
     </div>
+    <section class="container py-5">
+      <div id="carouselPlanos" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-
-    <!-- Carrossel -->
-
-
-
-    <!-- <div id="planos">
-      <div id="plano" class="row row-cols-1 row-cols-md-3 g-4">
-        <div id="plano1" class=" col">
-          <div class="card h-100">
-            <img src="./img/imagem-fundo.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class=" rounded-lg p-6 max-w-xs plano">
-                <h3 class="text-xl font-semibold">Business plan</h3>
-                <p class="text-2xl font-bold mt-2">$29/mo
-                  <span class="text-sm font-normal">or $299 yearly</span>
-                </p>
-                <br>
-                <div id="itens-plano" class="mt-4">
-
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
+        <div class="carousel-wrapper">
+          <div class="carousel-inner">
+            <!-- Slide 1 - Plano Básico -->
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="fw-bold">Plano Básico</h2>
+                  <p class="text-muted">Ideal para quem está começando</p>
+                  <ul>
+                    <li>Site simples de 1 página</li>
+                    <li>Responsivo</li>
+                    <li>Suporte por e-mail</li>
+                    <li>R$ 399,00</li>
                   </ul>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <img src="./img/imagem1.jpeg" class="d-block w-100 rounded shadow" alt="Plano Básico" />
                 </div>
               </div>
             </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-primary btn-lg"><a href="planos.php">Adquirir plano</a></button>
+
+            <!-- Slide 2 - Plano Intermediário -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="fw-bold">Plano Intermediário</h2>
+                  <p class="text-muted">Para pequenas empresas</p>
+                  <ul>
+                    <li>Site com até 5 páginas</li>
+                    <li>Design personalizado</li>
+                    <li>Suporte por WhatsApp</li>
+                    <li>R$ 799,00</li>
+                  </ul>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <img src="./img/imagem2.jpeg" class="d-block w-100 rounded shadow"
+                    alt="Plano Intermediário" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 - Plano Profissional -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="fw-bold">Plano Profissional</h2>
+                  <p class="text-muted">
+                    Para empresas que precisam de mais recursos
+                  </p>
+                  <ul>
+                    <li>Site completo com blog</li>
+                    <li>SEO e Analytics</li>
+                    <li>Hospedagem e domínio</li>
+                    <li>R$ 1.299,00</li>
+                  </ul>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <img src="./img/imagem1.jpeg" class="d-block w-100 rounded shadow"
+                    alt="Plano Profissional" />
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Botões de navegação -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlanos"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPlanos"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
         </div>
-        <div id="plano2" class="col">
-          <div class="card h-100">
-            <img src="./img/imagem-fundo.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class=" rounded-lg p-6 max-w-xs plano">
-                <h3 class="text-xl font-semibold">Business plan</h3>
-                <p class="text-2xl font-bold mt-2">$29/mo
-                  <span class="text-sm font-normal">or $299 yearly</span>
-                </p>
-                <br>
-                <div id="itens-plano" class="mt-4">
-
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-primary btn-lg"><a href="planos.php">Adquirir plano</a></button>
-            </div>
-          </div>
-        </div>
-        <div id="plano3" class="col">
-          <div class="card h-100">
-            <img src="./img/imagem-fundo.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class=" rounded-lg p-6 max-w-xs plano">
-                <h3 class="text-xl font-semibold">Business plan</h3>
-                <p class="text-2xl font-bold mt-2">$29/mo
-                  <span class="text-sm font-normal">or $299 yearly</span>
-                </p>
-                <br>
-                <div id="itens-plano" class="mt-4">
-
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
-                  <div id="beneficios" class="flex items-center">
-                    <span class="ml-2"><i class='bx bx-check'></i>Feature text goes here</span>
-                  </div>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-primary btn-lg"><a href="planos.php">Adquirir plano</a></button>
-            </div>
-          </div>
-        </div> -->
+      </div>
+    </section>
   </div>
-
-
-  </div>
-
-  </div>
-
-
 
   <div class="vendas">
-    <h1>Nossas ofertas e descontos</h1>
-    <p>Aproveite para achar nossas ofertas e descontas da semana!</p>
-
-
-    <div class="lista">
-      <div class="item">
-        <img src="./img/computador.png" alt="...">
-        <div class="info">
-          <div>
-            <h5>Sites dinamicos</h5>
-            <div class="btc">
-              <i class='bx bxl-bitcoin'></i>
-              <p>0.29 btc</p>
-            </div>
-          </div>
-        </div>
-        <div class="oferta">
-          <p>2h 28min 1s</p>
-          <a href="">
-            <p>Oferta</p>
-          </a>
-        </div>
-      </div>
-      <div class="item">
-        <img src="./img/computador.png" alt="...">
-        <div class="info">
-          <div>
-            <h5>Sites dinamicos</h5>
-            <div class="btc">
-              <i class='bx bxl-bitcoin'></i>
-              <p>0.29 btc</p>
-            </div>
-          </div>
-        </div>
-        <div class="oferta">
-          <p>2h 28min 1s</p>
-          <a href="">
-            <p>Oferta</p>
-          </a>
-        </div>
-      </div>
-      <div class="item">
-        <img src="./img/computador.png" alt="...">
-        <div class="info">
-          <div>
-            <h5>Sites dinamicos</h5>
-            <div class="btc">
-              <i class='bx bxl-bitcoin'></i>
-              <p>0.29 btc</p>
-            </div>
-          </div>
-        </div>
-        <div class="oferta">
-          <p>2h 28min 1s</p>
-          <a href="">
-            <p>Oferta</p>
-          </a>
-        </div>
-      </div>
-      <div class="item">
-        <img src="./img/computador.png" alt="...">
-        <div class="info">
-          <div>
-            <h5>Sites dinamicos</h5>
-            <div class="btc">
-              <i class='bx bxl-bitcoin'></i>
-              <p>0.29 btc</p>
-            </div>
-          </div>
-        </div>
-        <div class="oferta">
-          <p>2h 28min 1s</p>
-          <a href="">
-            <p>Oferta</p>
-          </a>
-        </div>
-      </div>
-    </div>
-
+    <h1>Confira os Nossos Serviços extras para seus sonhos</h1>
   </div>
+  <div class="extras-section container mt-5">
 
+    <h2 class="extras-title">Serviços Extras</h2>
+    <p class="extras-subtitle">Itens adicionais que podem ser combinados com qualquer plano:</p>
+    <ul class="extras-list">
+      <li>✅ Versão em inglês/espanhol (tradução + layout) — <strong>+ R$ 398</strong></li>
+      <li>✅ Design de ícones e logotipo simples — <strong>R$ 150 - R$ 299</strong></li>
+    </ul>
+  </div>
+  </div>
   <br><br><br><br><br>
 
   <div class="atendimento">
