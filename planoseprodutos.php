@@ -1,10 +1,15 @@
+<?php
+session_start();
+$usuarioLogado = isset($_SESSION['email']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/planoss.css">
+  <link rel="stylesheet" href="./css/Planos.css">
   <title>Document</title>
 
   <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
@@ -15,7 +20,6 @@
   <link rel="stylesheet" href="./css/responsive3.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/home.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -36,29 +40,8 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Produtos e Planos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item " href="planoseprodutos.php">Planos</a></li>
-              <li><a class="dropdown-item" href="planoseprodutos.php">Produtos</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Recursos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#redes">Redes</a></li>
-              <li><a class="dropdown-item" href="planoseprodutos.php">Modelos</a></li>
-            </ul>
-          </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="faleconosco.php">Fale conosco</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#div-empresa">Sobre a embresa</a>
           </li>
           <?php if ($usuarioLogado): ?>
             <li class="nav-item">
@@ -69,9 +52,6 @@
         </ul>
       </div>
     </div>
-    <!-- <div class="button">
-      <div class="ball"></div>
-    </div> -->
     <div class="theme-container">
       <button id="theme-toggle" class="theme-toggle">
         <i id="theme-icon" class='bx bx-moon theme-icon'></i>
@@ -195,7 +175,7 @@
   <br><br><br><br><br>
 
   <div class="atendimento">
-    <img src="./img/obrigado.png" alt="">
+    <img src="./img/criatividade.svg" alt="">
     <h1>Área de livre criatividade só aqui</h1>
     <p>Se você deseja criar seu website sem que haja barreiras e diversas limitações, aqui você é livre para escolher o
       que quiser para brincar com a criatividade</p>
@@ -415,6 +395,7 @@
       <a href="sitedinamico copy 3.php" class="link2">saiba mais</a>
     </div>
   </div>
+  <script src="./js/mod.js"></script>
   <script src="./js/planoseprodutos.js"></script>
 </body>
 

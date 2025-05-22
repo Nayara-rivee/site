@@ -167,34 +167,6 @@
     right: 10px;
     background-color: #ffffff;
   }
-/*   
-  .ball {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 100%;
-    border-radius: 50%;
-    background: #39a2db;
-    transition: left 1s;
-  }
-  
-  .ball-move.navbar {
-    box-shadow: 0px 5px 20px rgba(136, 135, 135, 0.5);
-  }
-  
-  .ball-move {
-    left: calc(100% - 40px);
-  }
-  
-  .ball-move.ball {
-    left: calc(100% - 40px);
-    background: #084a4e;
-  }
-  
-  .dark {
-    background-color: #39a2db;
-  } */
   
   /* introdução */
   
@@ -783,7 +755,7 @@
   /* sobre a emrpesa */
   
   .div-empresa {
-    background: #000;
+    background: linear-gradient(to bottom, #17171F 40%, #000 80%);
     width: 2000px;
     height: 3200px;
     position: relative;
@@ -805,7 +777,7 @@
   }
   
   .imagem-empresa img {
-    height: 50%;
+    height: 70%;
     width: 30%;
     border: 3px solid #ffff;
     border-radius: 50%;
@@ -815,7 +787,8 @@
   }
   
   .div-empresa .apresentacao-empresa .btn2 {
-    background: #0f9dd4;
+    background: none;
+    border: 3px #7096ca solid;
     color: #fff;
     border-radius: 20px;
     width: 200px;
@@ -844,6 +817,7 @@
     width: 600px;
     color: #fff;
     right: -800px;
+    text-align: justify;
   }
   
   .div-empresa .container3 {
@@ -1118,13 +1092,17 @@
     
     .contato{
       width: 100%;
-      background: #dcdcdc;
+      background: #17171F;
       height: 100vh;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      top: 1000px;
+      top: 1003px;
+      border: 5px solid; /* obrigatória */
+      border-image: linear-gradient(to right, #29374b, #2e4478);
+      border-image-slice: 1;
+
     }
     
     .contato h1{
@@ -1133,6 +1111,7 @@
       display: flex;
       right: -200px;
       text-align: center;
+      color: #fff;
     }
     
     .contato img{
@@ -1151,6 +1130,9 @@
       right: 500px;
       top: 70px;
     }
+     .contato form label{
+      color: #fff;
+     }
      .button-form{
     display: flex;
     justify-content: center;
@@ -1185,7 +1167,7 @@
     }
     
     .contato input{
-      border-radius: 50px;
+      border-radius: 20px;
       border: 1px solid rgba(0, 0, 0, 0.2);
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
       width: 500px;

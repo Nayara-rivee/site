@@ -115,7 +115,7 @@
     </div>
 
     <div class="contato">
-        <img src="./img/computador.png" alt="" />
+        <img src="./img/orcamento.svg" alt="" />
         <h1>Escolha seu plano</h1>
         <form name="form1" id="form1" method="POST" action="#">
           <div class="name">

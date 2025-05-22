@@ -62,38 +62,145 @@ body {
 }
 
 /* navbar */
-.navbar .navbar-nav .nav-item .nav-link p {
-  position: relative;
-  top: 10px;
-}
+  .navbar {
+    box-shadow: 0px 20px 20px rgba(36, 36, 36, 0.5);
+    background: #17171F;
+  }
+  
+  .navbar-collapse .navbar-nav .nav-item a {
+    position: relative;
+    right: -50px;
+    font-size: 1.2em;
+    margin: 30px;
+  }
+  .navbar-collapse .navbar-nav .nav-item a:hover {
+    transition: 0.5s;
+    color: #0ab8a1;
+  }
+  .navbar-collapse .navbar-nav .nav-item a{
+    color: #fff;
+  }
+  
+  .dropdown-menu{
+    width: 300px;
 
-.navbar .navbar-nav .nav-item .nav-link i {
-  right: 2px;
-  position: relative;
-  top: -10px;
-  font-size: 26px;
-}
+  }
 
-.nav_itens .itens {
-  list-style: none;
-}
+  .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item{
+    width: 100px;
+    color: #44438f;
+  }
+  /* botão de login */
+  
+  .login {
+    margin: 20px 15px;
+    color: #000;
+    border:2px #0ab8a1 solid;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background: #eeeeee;
+  }
+  
+  .cadastrar {
+    margin: 20px 15px;
+    color: #000;
+    border:2px #0ab8a1 solid;
+    position: relative;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background: #eeeeee;
+  }
+  
+  .logout {
+    margin: 20px 15px;
+    color: #000;
+    border:2px #0ab8a1 solid;
+    position: relative;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background: #eeeeee;
+  }
+  .cadastrar:hover {
+    transition: 1s;
+    background: #17171F;
+    color: #fff;
+  }
+  
+  .login:hover {
+    transition: 1s;
+    background: #17171F;
+    color: #fff;
+  }
+  .logout:hover {
+    transition: 1s;
+    background: #17171F;
+    color: #fff;
+  }
+  
+  /* mode do background */
 
-.container3 .itens .nav_itens {
-  display: inline-block;
-}
+  body.light-mode{
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Tema escuro */
+  body.dark-mode{
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode .bx-sun {
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  .light-mode .bx-moon {
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  
 
-.container3 .itens .nav_itens a {
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 19px;
-  color: #fff;
-  border-radius: 30px;
-  transition: 0.6s;
-}
+  .theme-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .theme-toggle {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .theme-icon {
+    font-size: 2rem;
+  }
 
-.container3 .itens .nav_itens a:hover {
-  background-color: rgb(0, 123, 255);
-}
+
+  
+  .button {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #39a2db59;
+    cursor: pointer;
+    right: 10px;
+    background-color: #ffffff;
+  }
+
+
 
 /* planos */
 .carousel-wrapper {
@@ -191,12 +298,17 @@ body {
 .atendimento {
   position: relative;
   height: 700px;
-  background: #dcdcdc;
+  background: #3c4c80;
+  border: 5px solid; /* obrigatória */
+  border-image: linear-gradient(to right, #7096ca, #2e4478);
+  border-image-slice: 1;
 }
 .atendimento img {
   position: relative;
   display: flex;
-  height: 600px;
+  height: 500px;
+  right: -100px;
+  top: 100px;
 }
 .atendimento h1 {
   position: relative;
@@ -206,8 +318,9 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   display: flex;
-  top: -1000px;
-  margin: 450px;
+  top: -900px;
+  margin: 450px ;
+  color: #fff;
 }
 .atendimento p {
   position: relative;
@@ -216,31 +329,37 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   display: flex;
-  top: -1350px;
+  top: -1250px;
   margin: 0 910px;
   width: 600px;
+  color: #fff;
 }
 .atendimento .faleconosco p {
   position: relative;
   font-size: 1.5em;
   text-align: center;
-  top: -1300px;
+  top: -1200px;
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
 }
 
 .atendimento .faleconosco button {
-  background: #1fb840;
+  background:#7096ca;
   position: relative;
   display: flex;
   border-radius: 20px;
   width: 200px;
   height: 50px;
-  top: -1280px;
+  top: -1180px;
   margin: 0 1150px;
+  border: 3px #1e2c4d solid;
+    transition: all 0.3s ease;
 }
-
+.atendimento .faleconosco button:hover {
+  background:#282f47;
+  transition: all 0.3s ease;
+}
 .atendimento .faleconosco button a {
   text-decoration: none;
   color: #fff;

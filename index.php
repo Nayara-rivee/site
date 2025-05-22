@@ -13,8 +13,8 @@ $usuarioLogado = isset($_SESSION['email']);
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/home.css" />
-  <link rel="stylesheet" href="./css/baner.css">
+  <link rel="stylesheet" href="./css/Home.css" />
+  <link rel="stylesheet" href="./css/banner.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -78,9 +78,6 @@ $usuarioLogado = isset($_SESSION['email']);
         </ul>
       </div>
     </div>
-    <!-- <div class="button">
-      <div class="ball"></div>
-    </div> -->
     <div class="theme-container">
       <button id="theme-toggle" class="theme-toggle">
         <i id="theme-icon" class='bx bx-moon theme-icon'></i>
@@ -362,27 +359,28 @@ $usuarioLogado = isset($_SESSION['email']);
   </div>
 
   <br />
-
-  <div class="contato">
-    <img src="./img/comunidade.svg" alt="" />
-    <h1>Venha ser parte de nossa comunidade e ficar por dentro de tudo!</h1>
-    <form name="form1" id="form1" method="POST" action="comunidade_processa.php">
-      <div class="name">
-        <label for="name">Nome</label>
-        <input type="text" name="nome_comunidade" id="firstname" placeholder="Seu nome na comunidade" required />
-      </div>
-      <div class="email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu email" required />
-      </div>
-      <div class="tell">
-        <label for="number">Celular</label>
-        <input type="text" name="telefone_comunidade" id="number" placeholder="Celular com DDD (somente números)" required />
-      </div>
-      <div class="button-form">
-        <button><a href="index.php" type="submit">Fazer parte</a></button>
-      </div>
-    </form>
+  <div class="borda-gradiente">
+    <div class="contato">
+      <img src="./img/comunidade.svg" alt="" />
+      <h1>Venha ser parte de nossa comunidade e ficar por dentro de tudo!</h1>
+      <form name="form1" id="form1" method="POST" action="comunidade_processa.php">
+        <div class="name">
+          <label for="name">Nome</label>
+          <input type="text" name="nome_comunidade" id="firstname" placeholder="Seu nome na comunidade" required />
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu email" required />
+        </div>
+        <div class="tell">
+          <label for="number">Celular</label>
+          <input type="text" name="telefone_comunidade" id="number" placeholder="Celular com DDD (somente números)" required />
+        </div>
+        <div class="button-form">
+          <button><a href="index.php" type="submit">Fazer parte</a></button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <div class="div-empresa" id="div-empresa">
@@ -434,151 +432,8 @@ $usuarioLogado = isset($_SESSION['email']);
     </div>
     <br><br><br><br><br>
 
-    <!-- 
-    <h1>Conheça a equipe</h1> -->
 
     <h1>Conheça nossos projetos</h1>
-
-    <!-- participantes -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-
-        <!-- Slide 1
-        <div class="swiper-slide membro">
-          <div class="foto">
-            <img src="./img/pessoa1.jpeg" alt="...">
-          </div>
-          <h3>Nayara</h3>
-          <p class="role">Programadora</p>
-          <p class="description">
-            olá. sou programadora
-          </p>
-          <div class="media-icons2">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-          </div>
-        </div>
- -->
-        <!-- Slide 2
-        <div class="swiper-slide membro">
-          <div class="foto">
-            <img src="./img/pessoa2.jpeg" alt="...">
-          </div>
-          <h3>Iza</h3>
-          <p class="role">Design</p>
-          <p class="description">
-            olá. sou programadora
-          </p>
-          <div class="media-icons2">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-          </div>
-        </div>
- -->
-        <!-- Slide 3 
-        <div class="swiper-slide membro">
-          <div class="foto">
-            <img src="./img/pessoa3.jpeg" alt="...">
-          </div>
-          <h3>Maria Eduarda</h3>
-          <p class="role">Documentadora</p>
-          <p class="description">
-            olá. sou programadora
-          </p>
-          <div class="media-icons2">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-          </div>
-        </div>
--->
-        <!-- Slide 4 
-        <div class="swiper-slide membro">
-          <div class="foto">
-            <img src="./img/pessoa4.jpeg" alt="...">
-          </div>
-          <h3>Aline Hosen</h3>
-          <p class="role">Social Mídia</p>
-          <p class="description">
-            olá. sou programadora
-          </p>
-          <div class="media-icons2">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-          </div>
-        </div>
--->
-        <!-- Slide 5
-        <div class="swiper-slide membro">
-          <div class="foto">
-            <img src="./img/pessoa5.jpeg" alt="...">
-          </div>
-          <h3>Nickolas</h3>
-          <p class="role">Programador</p>
-          <p class="description">
-            olá. sou programadora
-          </p>
-          <div class="media-icons2">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-          </div>
-        </div>
- -->
-        <!-- Slide 6
-        <div class="swiper-slide membro">
-          <div class="foto">
-            <img src="./img/pessoa6.jpeg" alt="...">
-          </div>
-          <h3>Bruno</h3>
-          <p class="role">Design</p>
-          <p class="description">
-            olá. sou programadora
-          </p>
-          <div class="media-icons2">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-          </div>
-        </div>
- -->
-        <!-- Slide 7 
-        <div class="swiper-slide membro">
-          <div class="foto">
-            <img src="./img/pessoa7.jpeg" alt="...">
-          </div>
-          <h3>Allana</h3>
-          <p class="role">Documentadora e Analista de Software</p>
-          <p class="description">
-            olá. sou programadora
-          </p>
-          <div class="media-icons2">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-          </div>
-        </div>
--->
-      </div>
-
-      <!-- Setas de navegação 
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
--->
-      <!-- Paginação (bolinhas) 
-      <div class="swiper-pagination"></div>
-      -->
-    </div>
 
     <!-- portfolio -->
     <div class="container2">
@@ -586,16 +441,16 @@ $usuarioLogado = isset($_SESSION['email']);
         <a href="https://www.exemplo.com/projeto1" class="card" target="_blank">
           <img src="./img/projeto1.jpeg" alt="Projeto 1">
           <div class="card-content">
-            <h2>Consultoria de TI</h2>
-            <p>Oferecendo soluções estratégicas de TI para empresas de todos os portes.</p>
+            <h2>Website Computação Quântica</h2>
+            <p>Website que é a base de uma introdução aos conhecimentos sobre a computação quÂntica</p>
           </div>
         </a>
 
         <a href="https://www.exemplo.com/projeto2" class="card" target="_blank">
           <img src="./img/projeto2.jpeg" alt="Projeto 2">
           <div class="card-content">
-            <h2>Website de E-commerce</h2>
-            <p>Desenvolvimento de loja online customizada e otimizada para vendas.</p>
+            <h2>Website de jogos</h2>
+            <p>Website de desenvolvimento de jogos </p>
           </div>
         </a>
       </div>
