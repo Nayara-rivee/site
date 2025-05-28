@@ -51,20 +51,11 @@ body {
   background: #dcdcdc;
   width: 100%;
 }
-.voltar {
-  margin: 20px 15px;
-  color: #fff;
-  background: #1fb840;
-  border-radius: 10%;
-  width: 80px;
-  height: 30px;
-  cursor: pointer;
-}
 
 /* navbar */
   .navbar {
     box-shadow: 0px 20px 20px rgba(36, 36, 36, 0.5);
-    background: #17171F;
+    background: #9393f0;
   }
   
   .navbar-collapse .navbar-nav .nav-item a {
@@ -75,7 +66,7 @@ body {
   }
   .navbar-collapse .navbar-nav .nav-item a:hover {
     transition: 0.5s;
-    color: #0ab8a1;
+    color: #d3d3e4;
   }
   .navbar-collapse .navbar-nav .nav-item a{
     color: #fff;
@@ -105,19 +96,6 @@ body {
     background: #eeeeee;
   }
   
-  .cadastrar {
-    margin: 20px 15px;
-    color: #000;
-    border:2px #0ab8a1 solid;
-    position: relative;
-    width: 120px;
-    height: 50px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    background: #eeeeee;
-  }
-  
   .logout {
     margin: 20px 15px;
     color: #000;
@@ -130,16 +108,10 @@ body {
     transition: 1s;
     background: #eeeeee;
   }
-  .cadastrar:hover {
-    transition: 1s;
-    background: #17171F;
-    color: #fff;
-  }
-  
   .login:hover {
     transition: 1s;
-    background: #17171F;
-    color: #fff;
+    background: #d3d3e4;
+    color: #000000;
   }
   .logout:hover {
     transition: 1s;

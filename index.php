@@ -13,11 +13,14 @@ $usuarioLogado = isset($_SESSION['email']);
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/Home.css" />
-  <link rel="stylesheet" href="./css/banner.css">
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/baner.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/acessibilidade.css">
+  <script defer src="./js/acessibilidade.js"></script>
+
   <!-- Swiper CSS -->
   <link
     rel="stylesheet"
@@ -26,12 +29,20 @@ $usuarioLogado = isset($_SESSION['email']);
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/responssividade.css">
 
 
 </head>
 
 <body>
+  <div id="vlibras">
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+  </div>
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -67,7 +78,7 @@ $usuarioLogado = isset($_SESSION['email']);
             <a class="nav-link active" aria-current="page" href="faleconosco.php">Fale conosco</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#div-empresa">Sobre a embresa</a>
+            <a class="nav-link active" aria-current="page" href="#div-empresa">Sobre a empresa</a>
           </li>
           <?php if ($usuarioLogado): ?>
             <li class="nav-item">
@@ -97,10 +108,11 @@ $usuarioLogado = isset($_SESSION['email']);
 
   </nav>
   <div class="introducao">
+
     <div class="texto">
       <h1>Crie seu prórpio website e comece no mundo da tecnologia hoje</h1>
       <p>
-        Monte seu prórpio website e ingresse no mundo da tecnologia sem litimes
+        Monte seu prórpio website e ingresse no mundo da tecnologia sem limites
       </p>
       <a href="planoseprodutos.php" class="link"><button class="botao-criar">Criar website</button></a>
     </div>
@@ -157,23 +169,23 @@ $usuarioLogado = isset($_SESSION['email']);
 
   <!-- Seção Serviços -->
   <section class="servicos py-36 bg-white text-white">
-    <div class="container">
+    <div class="container" id="servicos">
       <h2 class="text-center text-3xl md:text-4xl font-bold mb-12 text-black">Nossos Serviços</h2>
       <div class="row g-4">
-        <div class="col-md-4">
-          <div class="bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
-            <h3 class="text-xl font-bold mb-2">Sites Responsivos</h3>
+        <div class="servico1 col-md-4">
+          <div class="servico1-texts bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
+            <h3 class="fs-4 font-bold mb-2">Sites Responsivos</h3>
             <p>Sites que se adaptam a qualquer dispositivo, proporcionando a melhor experiência ao usuário.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
-            <h3 class="text-xl font-bold mb-2">Lojas Virtuais</h3>
+        <div class="servico2 col-md-4">
+          <div class="servico2-texts bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
+            <h3 class=" text-xl font-bold mb-2">Lojas Virtuais</h3>
             <p>Comércio eletrônico moderno com design atrativo e ferramentas para aumentar suas vendas.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
+        <div class="servico3 col-md-4">
+          <div class="servico3-texts bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
             <h3 class="text-xl font-bold mb-2">Otimização SEO</h3>
             <p>Melhoramos o posicionamento do seu site no Google e atraímos mais visitantes qualificados.</p>
           </div>
@@ -181,27 +193,7 @@ $usuarioLogado = isset($_SESSION['email']);
       </div>
     </div>
   </section>
-  <!-- <section id="servicos" class="secao-servicos">
-    <h3 class="titulo-secao">Nossos Serviços</h3>
-    <div class="grid-servicos">
-      <div class="servico">
-        <h4 class="titulo-servico">🚀 Criação de Sites Profissionais</h4>
-        <p>Sites rápidos, seguros e adaptáveis a qualquer dispositivo.</p>
-      </div>
-      <div class="servico">
-        <h4 class="titulo-servico">🎨 Design Responsivo</h4>
-        <p>Layout moderno e exclusivo para sua marca se destacar.</p>
-      </div>
-      <div class="servico">
-        <h4 class="titulo-servico">🔗 Integração com redes sociais</h4>
-        <p>Conecte seu site com Instagram, WhatsApp, Facebook e mais.</p>
-      </div>
-      <div class="servico">
-        <h4 class="titulo-servico">🛠 Suporte Técnico</h4>
-        <p>Acompanhamento e manutenção para que tudo funcione bem sempre.</p>
-      </div>
-    </div>
-  </section> -->
+
   <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -438,7 +430,7 @@ $usuarioLogado = isset($_SESSION['email']);
     <!-- portfolio -->
     <div class="container2">
       <div class="portfolio">
-        <a href="https://www.exemplo.com/projeto1" class="card" target="_blank">
+        <a href="./video/2025-05-28 06-14-40.mp4" class="card" target="_blank">
           <img src="./img/projeto1.jpeg" alt="Projeto 1">
           <div class="card-content">
             <h2>Website Computação Quântica</h2>
@@ -469,51 +461,49 @@ $usuarioLogado = isset($_SESSION['email']);
   </div>
   </div>
 
-  <footer class="rodape" id="contato">
-    <div class="rodape-div">
-      <div class="rodape-div-1">
-        <div class="flex-1 mb-6">
-          <img src="img/logo.png" alt="..." />
-          <p class="text-muted-foreground">
-            Join our newsletter to stay up to date on features and releases.
+
+  <!-- Footer com logo -->
+  <footer class="py-5 mt-5" style=" color: #fff;">
+    <div class="container">
+      <div class="row">
+
+        <!-- Logo e descrição -->
+        <div class="col-md-4 mb-4">
+          <img src="./img/logo.png" alt="Logo da Empresa" style="width: 250px; margin-bottom: 10px;">
+          <p class="small">
+            Criamos sites modernos e personalizados para empresas de todos os portes.
           </p>
-          <div class="flex mt-4">
-            <input type="email" placeholder="Enter your email" class="border border-border rounded-l-md p-2 flex-1" />
-            <button class="bg-primary text-primary-foreground rounded-r-md p-2">
-              Subscribe
-            </button>
+        </div>
+
+        <!-- Links úteis -->
+        <div class="col-md-4 mb-4">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="#div-empresa">Quem somos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="faleconosco.php">Contato</a></li>
+            <li><a href="cliente.php">Área do cliente</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="col-md-4 mb-4">
+          <h5>Fale conosco</h5>
+          <p class="small">Email: contato@seudominio.com</p>
+          <p class="small">Telefone: (00) 1234-5678</p>
+          <div class="mt-3">
+            <a href="#" class="me-3"><i class="fab fa-facebook fa-lg text-white"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-instagram fa-lg text-white"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-lg text-white"></i></a>
           </div>
         </div>
+
       </div>
 
-      <div class="rodape-div-2">
-        <div class="rodape-div-2-coluna">
-          <!-- elemento -->
-          <span><b>Contatos</b></span>
-          <p>contato@na.na</p>
-          <p>+55 63 99200-0000</p>
-        </div>
-      </div>
-
-      <div class="rodape-div-3">
-        <div class="rodape-div-3-coluna">
-          <!-- elemento -->
-          <span><b>Links</b></span>
-          <p><a href="#servicos">Serviços</a></p>
-          <p><a href="#empresa">Empresa</a></p>
-          <p><a href="#sobre">Sobre</a></p>
-        </div>
-      </div>
-
-      <div class="rodape-div-4">
-        <div class="rodape-div-4-coluna">
-          <!-- elemento -->
-          <span><b>Outros</b></span>
-          <p>Políticas de Privacidade</p>
-        </div>
+      <div class="text-center pt-4 border-top border-secondary mt-4">
+        <p class="mb-0 small">&copy; 2025 Aurora Ability IT. Todos os direitos reservados.</p>
       </div>
     </div>
-    <p class="rodape-direitos">Informações sobre o site</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

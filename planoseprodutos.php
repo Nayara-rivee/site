@@ -9,7 +9,7 @@ $usuarioLogado = isset($_SESSION['email']);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/Planos.css">
+  <link rel="stylesheet" href="./css/planos.css">
   <title>Document</title>
 
   <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
@@ -30,7 +30,7 @@ $usuarioLogado = isset($_SESSION['email']);
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <img src="./img/logo.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
+      <img src="./img/Logo.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

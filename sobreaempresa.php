@@ -10,86 +10,61 @@ $usuarioLogado = isset($_SESSION['email']);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
-    <link rel="stylesheet" href="./css/Sobreaempresa.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/SobrEaempresa.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <img src="./img/logo2.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Produtos e Planos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item " href="planoseprodutos.php">Planos</a></li>
-              <li><a class="dropdown-item" href="planoseprodutos.php">Produtos</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Recursos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#redes">Redes</a></li>
-              <li><a class="dropdown-item" href="planoseprodutos.php">Modelos</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="faleconosco.php">Fale conosco</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#div-empresa">Sobre a embresa</a>
-          </li>
-          <?php if ($usuarioLogado): ?>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="cliente.php">Minha conta</a>
-            </li>
-          <?php endif; ?>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="./img/Logo.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Produtos e Planos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="planoseprodutos.php">Planos</a></li>
+                            <li><a class="dropdown-item" href="planoseprodutos.php">Produtos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="faleconosco.php">Fale conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php">Sobre a empresa</a>
+                    </li>
 
-        </ul>
-      </div>
-    </div>
-    <div class="theme-container">
-      <button id="theme-toggle" class="theme-toggle">
-        <i id="theme-icon" class='bx bx-moon theme-icon'></i>
-      </button>
+                </ul>
+            </div>
+        </div>
+        <div class="theme-container">
+            <button id="theme-toggle" class="theme-toggle">
+                <i id="theme-icon" class='bx bx-moon theme-icon'></i>
+            </button>
 
-    </div>
+        </div>
 
-    <?php if ($usuarioLogado): ?>
-      <div>
-        <a href="sair.php"><button class="logout" type="submit">Desconectar-se</button></a>
-      </div>
-    <?php else: ?>
-      <div>
-        <a href="login.php"><button class="login" type="submit">Login</button></a>
-      </div>
-    <?php endif; ?>
-
-  </nav>
+    </nav>
 
     <div class="banner">
         <div class="banner-content">
-            <h1 class="text-white">Conheça cada um de nós</h1>
+            <h1 class="text-white" id="conheca-cada-um-de-nos">Conheça cada um de nós</h1>
             <p>desde especialidades, até contatos</p>
         </div>
     </div>
 
-    <h1 class="text2">Conheça nossa equipe</h1>
     <main class="container-principal">
         <section class="center-circle">
             <img src="./img/logo2.png" alt="Infográfico 7 etapas">
@@ -197,7 +172,9 @@ $usuarioLogado = isset($_SESSION['email']);
         <br>
         <div class="linha-divisoria"></div>
         <br><br>
+
         <div class="documentador">
+            <div class="title">DOCUMENTADORA</div>
             <!-- Layout 1 - Linha do Tempo Vertical -->
             <div class="timeline-container">
                 <div class="timeline-card">
@@ -234,11 +211,12 @@ $usuarioLogado = isset($_SESSION['email']);
         <div class="linha-divisoria"></div>
         <br><br>
         <!-- programador -->
+        <div class="title">PROGRAMADORES</div>
         <div class="programador">
             <div class="container">
                 <!-- Perfil -->
                 <div class="profile">
-                    <img src="../img/pessoa1.jpeg" alt="Foto do Programador">
+                    <img src="./img/pessoa1.jpeg" alt="Foto do Programador">
                     <h2>João Dev</h2>
                     <p>@joaodev</p>
                     <div class="skills">
@@ -254,7 +232,7 @@ $usuarioLogado = isset($_SESSION['email']);
                 <!-- Projetos -->
                 <div class="projects">
                     <div class="project-card">
-                        <img src="https://via.placeholder.com/300x150" alt="Projeto 1">
+                        <img src="./img/projeto1.jpeg" alt="Projeto 1">
                         <div class="project-content">
                             <h4>Dashboard Admin</h4>
                             <p>Painel completo com autenticação e gráficos em tempo real.</p>
@@ -278,10 +256,11 @@ $usuarioLogado = isset($_SESSION['email']);
                     </div>
                 </div>
             </div>
+            <br>
             <div class="container">
                 <!-- Perfil -->
                 <div class="profile">
-                    <img src="../img/pessoa5.jpeg" alt="Foto do Programador">
+                    <img src="./img/pessoa5.jpeg" alt="Foto do Programador">
                     <h2>João Dev</h2>
                     <p>@joaodev</p>
                     <div class="skills">
@@ -325,12 +304,11 @@ $usuarioLogado = isset($_SESSION['email']);
         <br>
         <div class="linha-divisoria"></div>
         <br><br>
+
         <div class="column">
             <div class="title">ANALISTA DE SOFTWARE</div>
             <div class="image-row">
-                <img src="imagem1.jpeg" alt="img1">
-                <img src="imagem2.jpeg" alt="img2">
-                <img src="imagem3.jpeg" alt="img3">
+                <img src="./img/pessoa7.jpeg" alt="img1">
             </div>
         </div>
         <div class="portfolio-section">
@@ -355,8 +333,59 @@ $usuarioLogado = isset($_SESSION['email']);
                 </div>
             </div>
         </div>
-        
     </div>
+    <footer class="py-5 mt-5" style=" color: #fff;">
+        <div class="container">
+            <div class="row">
+
+                <!-- Logo e descrição -->
+                <div class="col-md-4 mb-4">
+                    <img src="./img/logo.png" alt="Logo da Empresa" style="width: 250px; margin-bottom: 10px;">
+                    <p class="small">
+                        Criamos sites modernos e personalizados para empresas de todos os portes.
+                    </p>
+                </div>
+
+                <!-- Links úteis -->
+                <div class="col-md-4 mb-4">
+                    <h5>Links úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.php">Quem somos</a></li>
+                        <li><a href="index.php">Serviços</a></li>
+                        <li><a href="faleconosco.php">Contato</a></li>
+                        <li><a href="cliente.php">Área do cliente</a></li>
+                        <li><a href="#conheca-cada-um-de-nos">Conheça cada um de nós</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Recursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#redes">Redes</a></li>
+                                <li><a class="dropdown-item" href="planoseprodutos.php">Modelos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div class="col-md-4 mb-4">
+                    <h5>Fale conosco</h5>
+                    <p class="small">Email: contato@seudominio.com</p>
+                    <p class="small">Telefone: (00) 1234-5678</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg text-white"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg text-white"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg text-white"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center pt-4 border-top border-secondary mt-4">
+                <p class="mb-0 small">&copy; 2025 Aurora Ability IT. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
     <script src="./js/mod.js"></script>
 </body>
 

@@ -1,0 +1,40 @@
+✅ Passo 3: Adicione isso no <body> de todas as páginas
+html
+
+<!-- Menu de Acessibilidade -->
+<div id="menuAcessibilidade">
+  <button onclick="ativarLeituraBoasVindas()">👂 Leitura</button>
+  <button onclick="alternarModoDaltônico()">🎨 Daltonismo</button>
+  <button onclick="ajustarFonte('aumentar')">🔍 A+</button>
+  <button onclick="ajustarFonte('reduzir')">🔎 A-</button>
+  <button onclick="ajustarFonte('normal')">🔁 A</button>
+</div>
+
+<!-- VLibras container -->
+<div id="vlibras">
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+</div>
+
+✅ E no <head> de cada página:
+html
+
+<link rel="stylesheet" href="assets/css/acessibilidade.css">
+<script defer src="assets/js/acessibilidade.js"></script>
+
+✅ Em qualquer elemento que queira leitura assistida:
+html
+
+<h2 tabindex="0" data-leitura="Painel do Cliente">Painel do Cliente</h2>
+
+* Como funcionam:
+
+Leitura assistida	Ativa ao clicar ou pressionar tecla – ou manualmente via botão "👂 Leitura"
+Modo daltônico	Botão 🎨 muda contraste e cores
+Fonte ajustável	Aumentar 🔍, Reduzir 🔎, ou Reset 🔁
+VLibras	Ativado com botão no canto (intérprete em Libras)
+Menu acessível	Fixado no canto inferior direito com ícones

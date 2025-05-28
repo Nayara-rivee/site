@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Acessível</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body.modo-daltonico {
+      filter: contrast(150%) saturate(50%);
+      background-color: #000 !important;
+      color: #fff !important;
+    }
+
+    body.aumentar-fonte {
+      font-size: 1.25em;
+    }
+
+    body.reduzir-fonte {
+      font-size: 0.9em;
+    }
+
+    #menuAcessibilidade {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      background-color: #343a40;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      gap: 10px;
+    }
+
+    #menuAcessibilidade button {
+      background: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #vlibras {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      z-index: 9998;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Conteúdo principal -->
+  <div class="container py-5">
+    <h1 tabindex="0" data-leitura="Bem-vindo ao nosso site. Você está na página inicial.">
+      Bem-vindo ao nosso site acessível
+    </h1>
+
+    <p tabindex="0" data-leitura="Nosso objetivo é tornar a web inclusiva para todos.">
+      Nosso objetivo é tornar a web inclusiva para todos, incluindo pessoas com deficiência visual, auditiva ou daltonismo.
+    </p>
+
+    <a href="#servicos" class="btn btn-primary my-3" tabindex="0" data-leitura="Clique aqui para conhecer nossos serviços.">
+      Ver serviços
+    </a>
+
+    <section id="servicos" class="mt-5" tabindex="0" data-leitura="Seção de serviços. Nós criamos sites profissionais, rápidos e acessíveis.">
+      <h2>Serviços</h2>
+      <p>
+        Criamos sites profissionais, rápidos e acessíveis para empresas e pessoas físicas.
+      </p>
+    </section>
+  </div>
+
+  <!-- Menu de acessibilidade -->
+  <div id="menuAcessibilidade">
+    <button onclick="ativarLeituraBoasVindas()">👂 Leitura</button>
+    <button onclick="alternarModoDaltônico()">🎨 Daltonismo</button>
+    <button onclick="ajustarFonte('aumentar')">🔍 A+</button>
+    <button onclick="ajustarFonte('reduzir')">🔎 A-</button>
+    <button onclick="ajustarFonte('normal')">🔁 A</button>
+  </div>
+
+  <!-- VLibras -->
+  <div vw class="enabled" id="vlibras">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <!-- Script de acessibilidade -->
+  <script>
+    let leituraIniciada = false;
+
+    function ativarLeitura(texto) {
+      speechSynthesis.cancel();
+      const msg = new SpeechSynthesisUtterance(texto);
+      speechSynthesis.speak(msg);
+    }
+
+    function ativarLeituraBoasVindas() {
+      ativarLeitura("Bem-vindo ao nosso site acessível. Use Tab para navegar e Escape para parar a leitura.");
+    }
+
+    function iniciarLeituraSeNecessario() {
+      if (!leituraIniciada) {
+        leituraIniciada = true;
+        ativarLeituraBoasVindas();
+      }
+    }
+
+    // Ativação de leitura ao focar ou clicar
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('[tabindex][data-leitura]').forEach(el => {
+        el.addEventListener("focus", () => {
+          const texto = el.getAttribute("data-leitura");
+          if (texto) ativarLeitura(texto);
+        });
+      });
+
+      document.querySelectorAll('[data-leitura]').forEach(el => {
+        el.addEventListener("click", () => {
+          const texto = el.getAttribute("data-leitura");
+          if (texto) ativarLeitura(texto);
+        });
+      });
+    });
+
+    // Detecta primeira interação
+    window.addEventListener("click", iniciarLeituraSeNecessario);
+    window.addEventListener("keydown", iniciarLeituraSeNecessario);
+
+    // ESC para parar leitura
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        speechSynthesis.cancel();
+      }
+    });
+
+    // Modo daltônico
+    function alternarModoDaltônico() {
+      document.body.classList.toggle("modo-daltonico");
+    }
+
+    // Ajuste de fonte
+    function ajustarFonte(acao) {
+      document.body.classList.remove("aumentar-fonte", "reduzir-fonte");
+      if (acao === "aumentar") {
+        document.body.classList.add("aumentar-fonte");
+      } else if (acao === "reduzir") {
+        document.body.classList.add("reduzir-fonte");
+      }
+    }
+  </script>
+
+</body>
+</html>
