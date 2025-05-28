@@ -85,8 +85,8 @@ body {
   
   .login {
     margin: 20px 15px;
-    color: #000;
-    border:2px #0ab8a1 solid;
+    color: #6565dd;
+    border:2px #9393f0 solid;
     position: relative;
     width: 100px;
     height: 50px;
@@ -98,8 +98,8 @@ body {
   
   .logout {
     margin: 20px 15px;
-    color: #000;
-    border:2px #0ab8a1 solid;
+    color: #6565dd;
+    border:2px #9393f0 solid;
     position: relative;
     width: 120px;
     height: 50px;
@@ -108,15 +108,17 @@ body {
     transition: 1s;
     background: #eeeeee;
   }
+
   .login:hover {
     transition: 1s;
-    background: #d3d3e4;
-    color: #000000;
+    background: none;
+    color: #fff;
+    border:2px #9393f0 solid;
   }
   .logout:hover {
     transition: 1s;
-    background: #17171F;
     color: #fff;
+    border:2px #9393f0 solid;
   }
   
   /* mode do background */
