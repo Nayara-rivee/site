@@ -68,15 +68,15 @@ $usuarioLogado = isset($_SESSION['email']);
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="src/pages/index.php">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Produtos e Planos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item " href="planoseprodutos.php">Planos</a></li>
-              <li><a class="dropdown-item" href="planoseprodutos.php">Produtos</a></li>
+              <li><a class="dropdown-item " href="src/pages/planoseprodutos.php">Planos</a></li>
+              <li><a class="dropdown-item" href="src/pages/planoseprodutos.php">Produtos</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -85,18 +85,18 @@ $usuarioLogado = isset($_SESSION['email']);
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#redes">Redes</a></li>
-              <li><a class="dropdown-item" href="planoseprodutos.php">Modelos</a></li>
+              <li><a class="dropdown-item" href="src/pages/planoseprodutos.php">Modelos</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="faleconosco.php">Fale conosco</a>
+            <a class="nav-link active" aria-current="page" href="src/pages/faleconosco.php">Fale conosco</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#div-empresa">Sobre a empresa</a>
           </li>
           <?php if ($usuarioLogado): ?>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="cliente.php">Minha conta</a>
+              <a class="nav-link active" aria-current="page" href="src/pages/cliente.php">Minha conta</a>
             </li>
           <?php endif; ?>
 
@@ -112,11 +112,11 @@ $usuarioLogado = isset($_SESSION['email']);
 
     <?php if ($usuarioLogado): ?>
       <div>
-        <a href="sair.php"><button class="logout" type="submit">Desconectar-se</button></a>
+        <a href="src/pages/sair.php"><button class="logout" type="submit">Desconectar-se</button></a>
       </div>
     <?php else: ?>
       <div>
-        <a href="login.php"><button class="login" type="submit">Login</button></a>
+        <a href="src/pages/login.php"><button class="login" type="submit">Login</button></a>
       </div>
     <?php endif; ?>
 
@@ -326,7 +326,7 @@ $usuarioLogado = isset($_SESSION['email']);
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in doloribus pariatur possimus fugit fuga ratione optio quae ipsam autem soluta consequatur provident, debitis illo nemo ducimus, tenetur voluptatum numquam.</p>
               <br>
 
-              <a href="planoseprodutos.php" class="link"><button class="botao-criar">Criar website</button></a>
+              <a href="src/pages/planoseprodutos.php" class="link"><button class="botao-criar">Criar website</button></a>
             </div>
             <div class="carousel-image">
               <img src="src/img/planos.svg" alt="Imagem 1">
@@ -444,7 +444,7 @@ $usuarioLogado = isset($_SESSION['email']);
   <div class="contato">
     <img src="src/img/comunidade.svg" alt="" />
     <h1>Venha ser parte de nossa comunidade e ficar por dentro de tudo!</h1>
-    <form name="form1" id="form1" method="POST" action="comunidade_processa.php">
+    <form name="form1" id="form1" method="POST" action="src/pages/comunidade_processa.php">
       <div class="name">
         <label for="name">Nome</label>
         <input type="text" name="nome_comunidade" id="firstname" placeholder="Seu nome na comunidade" required />
@@ -458,7 +458,7 @@ $usuarioLogado = isset($_SESSION['email']);
         <input type="text" name="telefone_comunidade" id="number" placeholder="Celular com DDD (somente números)" required />
       </div>
       <div class="button-form">
-        <button><a href="index.php" type="submit">Fazer parte</a></button>
+        <button><a href="src/pages/index.php" type="submit">Fazer parte</a></button>
       </div>
     </form>
   </div>
@@ -480,7 +480,7 @@ $usuarioLogado = isset($_SESSION['email']);
         inclusivo, deram origem à Aurorability, uma empresa que busca fazer a diferença na vida de todos os usuários.
       </p>
 
-      <a href="faleconosco.php"><button class="btn2">Fale conosco</button></a>
+      <a href="src/pages/faleconosco.php"><button class="btn2">Fale conosco</button></a>
     </div>
 
     <div class="redes" id="redes">
@@ -543,7 +543,7 @@ $usuarioLogado = isset($_SESSION['email']);
         <hr>
         <p class="subtitle">Aurora Ability IT</p>
         <br>
-        <a href="sobreaempresa.php" class="link"><button class="botao-criar">Mais Sobre Nós</button></a>
+        <a href="src/pages/sobreaempresa.php" class="link"><button class="botao-criar">Mais Sobre Nós</button></a>
       </div>
     </div>
   </div>
@@ -570,8 +570,8 @@ $usuarioLogado = isset($_SESSION['email']);
           <ul class="list-unstyled">
             <li><a href="#div-empresa">Quem somos</a></li>
             <li><a href="#servicos">Serviços</a></li>
-            <li><a href="faleconosco.php">Contato</a></li>
-            <li><a href="cliente.php">Área do cliente</a></li>
+            <li><a href="src/pages/faleconosco.php">Contato</a></li>
+            <li><a href="src/pages/cliente.php">Área do cliente</a></li>
           </ul>
         </div>
 
