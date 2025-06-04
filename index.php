@@ -27,23 +27,23 @@ $usuarioLogado = isset($_SESSION['email']);
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/HomE.css" />
-  <link rel="stylesheet" href="./css/banner.css">
-  <link rel="stylesheet" href="./css-globais/css/Navbar.css">
-  <link rel="stylesheet" href="./css-globais/css/templates.css">
+  <link rel="stylesheet" href="src/css/home.css" />
+  <link rel="stylesheet" href="src/css/banner.css">
+  <link rel="stylesheet" href="src/css-globais/css/Navbar.css">
+  <link rel="stylesheet" href="src/css-globais/css/templates.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="./css/acessibilidade.css">
-  <link rel="stylesheet" href="./css/templates.css">
+  <link rel="stylesheet" href="src/css/acessibilidade.css">
+  <link rel="stylesheet" href="src/css/templates.css">
 
-  <script defer src="./js/acessibilidade.js"></script>
+  <script defer src="src/js/acessibilidade.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/responssividade.css">
+  <link rel="stylesheet" href="src/css/responssividade.css">
 
 
 </head>
@@ -60,7 +60,7 @@ $usuarioLogado = isset($_SESSION['email']);
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <img src="./img/logo.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
+      <img src="src/img/logo.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -141,7 +141,7 @@ $usuarioLogado = isset($_SESSION['email']);
 
         <div class="col-lg-6">
           <div class="hero-image">
-            <img src="./img/inicio.svg" alt="Business Growth" class="img-fluid" loading="lazy">
+            <img src="src/img/inicio.svg" alt="Business Growth" class="img-fluid" loading="lazy">
           </div>
         </div>
       </div>
@@ -206,7 +206,7 @@ $usuarioLogado = isset($_SESSION['email']);
           <div class="modal_container">
             <span class="close" data-modal="video1">&times;</span>
             <div class="iframe_container">
-              <iframe width="560" height="315" src="./img/2025-03-21 16-24-0.mp4" title="YouTube video player"
+              <iframe width="560" height="315" src="src/img/2025-03-21 16-24-0.mp4" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -224,7 +224,7 @@ $usuarioLogado = isset($_SESSION['email']);
           <div class="modal_container">
             <span class="close" data-modal="video2">&times;</span>
             <div class="iframe_container">
-              <iframe width="560" height="315" src="./img/2025-03-21 16-06-1.mp4" title="YouTube video player"
+              <iframe width="560" height="315" src="src/img/2025-03-21 16-06-1.mp4" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -329,7 +329,7 @@ $usuarioLogado = isset($_SESSION['email']);
               <a href="planoseprodutos.php" class="link"><button class="botao-criar">Criar website</button></a>
             </div>
             <div class="carousel-image">
-              <img src="./img/planos.svg" alt="Imagem 1">
+              <img src="src/img/planos.svg" alt="Imagem 1">
             </div>
           </div>
         </div>
@@ -363,7 +363,7 @@ $usuarioLogado = isset($_SESSION['email']);
           <div class="modal_container">
             <span class="close" data-modal="video3">&times;</span>
             <div class="iframe_container">
-              <iframe width="560" height="315" src="./img/2024-11-29 16-43-52.mp4" title="YouTube video player"
+              <iframe width="560" height="315" src="src/img/2024-11-29 16-43-52.mp4" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -391,7 +391,7 @@ $usuarioLogado = isset($_SESSION['email']);
           <div class="modal_container">
             <span class="close" data-modal="video4">&times;</span>
             <div class="iframe_container">
-              <iframe width="560" height="315" src="./img/2024-11-29 19-46-56.mp4" title="YouTube video player"
+              <iframe width="560" height="315" src="src/img/2024-11-29 19-46-56.mp4" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -419,7 +419,7 @@ $usuarioLogado = isset($_SESSION['email']);
           <div class="modal_container">
             <span class="close" data-modal="video5">&times;</span>
             <div class="iframe_container">
-              <iframe width="560" height="315" src="./img/2024-11-29 16-43-52.mp4" title="YouTube video player"
+              <iframe width="560" height="315" src="src/img/2024-11-29 16-43-52.mp4" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -442,7 +442,7 @@ $usuarioLogado = isset($_SESSION['email']);
   <br />
 
   <div class="contato">
-    <img src="./img/comunidade.svg" alt="" />
+    <img src="src/img/comunidade.svg" alt="" />
     <h1>Venha ser parte de nossa comunidade e ficar por dentro de tudo!</h1>
     <form name="form1" id="form1" method="POST" action="comunidade_processa.php">
       <div class="name">
@@ -468,7 +468,7 @@ $usuarioLogado = isset($_SESSION['email']);
     <h1>Quem somos nós</h1>
 
     <div class="imagem-empresa">
-      <img src="./img/grupo.jpeg" alt="" />
+      <img src="src/img/grupo.jpeg" alt="" />
     </div>
     <div class="apresentacao-empresa">
       <h1>Quem é a AuroraIT?</h1>
@@ -519,8 +519,8 @@ $usuarioLogado = isset($_SESSION['email']);
     <!-- portfolio -->
     <div class="container2">
       <div class="portfolio">
-        <a href="./video/2025-05-28 06-14-40.mp4" class="card" target="_blank">
-          <img src="./img/projeto1.jpeg" alt="Projeto 1">
+        <a href="src/video/2025-05-28 06-14-40.mp4" class="card" target="_blank">
+          <img src="src/img/projeto1.jpeg" alt="Projeto 1">
           <div class="card-content">
             <h2>Website Computação Quântica</h2>
             <p>Website que é a base de uma introdução aos conhecimentos sobre a computação quÂntica</p>
@@ -528,7 +528,7 @@ $usuarioLogado = isset($_SESSION['email']);
         </a>
 
         <a href="https://www.exemplo.com/projeto2" class="card" target="_blank">
-          <img src="./img/projeto2.jpeg" alt="Projeto 2">
+          <img src="src/img/projeto2.jpeg" alt="Projeto 2">
           <div class="card-content">
             <h2>Website de jogos</h2>
             <p>Website de desenvolvimento de jogos </p>
@@ -558,7 +558,7 @@ $usuarioLogado = isset($_SESSION['email']);
 
         <!-- Logo e descrição -->
         <div class="col-md-4 mb-4">
-          <img src="./img/logo.png" alt="Logo da Empresa" style="width: 250px; margin-bottom: 10px;">
+          <img src="src/img/logo.png" alt="Logo da Empresa" style="width: 250px; margin-bottom: 10px;">
           <p class="small">
             Criamos sites modernos e personalizados para empresas de todos os portes.
           </p>
@@ -605,12 +605,12 @@ $usuarioLogado = isset($_SESSION['email']);
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="./js/main.js"></script>
+  <script src="src/js/main.js"></script>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="./js/inicio.js"></script>
-  <script src="./js/mod.js"></script>
+  <script src="src/js/inicio.js"></script>
+  <script src="src/js/mod.js"></script>
 </body>
 
 </html>
