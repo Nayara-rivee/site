@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
-require_once 'config.php'; // usa $conexao
+require_once 'src/pages/config.php'; // usa $conexao
 
 $email = $_GET['email'] ?? '';
 

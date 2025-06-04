@@ -2,7 +2,7 @@
 
     if(!empty($_GET['id']))
     {
-        include_once('config.php');
+        include_once('src/pages/config.php');
 
         $id = $_GET['id'];
 
@@ -16,6 +16,6 @@
             $resultDelete = $conexao->query($sqlDelete);
         }
     }
-    header('Location: enderecocliente.php');
+    header('Location: src/pages/enderecocliente.php');
    
 ?>

@@ -16,7 +16,7 @@ if (isset($_GET['token'])) {
 
     if ($user) {
         // Exibir formulário de nova senha
-        echo '<form action="reset_password_action.php" method="POST">
+        echo '<form action="src/pages/reset_password_action.php" method="POST">
                 <input type="hidden" name="token" value="' . $token . '">
                 <label for="new_password">Nova Senha:</label>
                 <input type="password" name="new_password" required>

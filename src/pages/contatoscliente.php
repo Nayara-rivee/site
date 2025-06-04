@@ -22,10 +22,10 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-primary bg-dark">
         <div>
-            <a href="index.php"><button class="voltar" type="submit">home</button></a>
+            <a href="src/pages/index.php"><button class="voltar" type="submit">home</button></a>
         </div>
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php"><b class="text-white">AuroraIT</b></a>
+            <a class="navbar-brand" href="src/pages/index.php"><b class="text-white">AuroraIT</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,25 +42,25 @@
             <div class="row gx-3 menu-lateral ">
                 <div class="col-4 ">
                     <div class="list-group">
-                        <a href="dadoscliente.php" class="list-group-item list-group-item-actiontext-light">
+                        <a href="src/pages/dadoscliente.php" class="list-group-item list-group-item-actiontext-light">
                             <i class='bx bx-user'></i> Dados Pessoais
                         </a>
-                        <a href="dadoscliente.php" class="list-group-item list-group-item-action bg-danger text-light">
+                        <a href="src/pages/dadoscliente.php" class="list-group-item list-group-item-action bg-danger text-light">
                             <i class='bx bx-user'></i> Contatos
                         </a>
-                        <a href="enderecocliente.php" class="list-group-item list-group-item-action">
+                        <a href="src/pages/enderecocliente.php" class="list-group-item list-group-item-action">
                             <i class='bx bx-home'></i> Endereço
                         </a>
-                        <a href="pedidoscliente.php" class="list-group-item list-group-item-action">
+                        <a href="src/pages/pedidoscliente.php" class="list-group-item list-group-item-action">
                             <i class='bx bxs-truck'></i> Pedidos
                         </a>
-                        <a href="planoscliente.php" class="list-group-item list-group-item-action">
+                        <a href="src/pages/planoscliente.php" class="list-group-item list-group-item-action">
                             <i class='bx bx-heart'></i> Planos
                         </a>
-                        <a href="senha.php" class="list-group-item list-group-item-action">
+                        <a href="src/pages/senha.php" class="list-group-item list-group-item-action">
                             <i class='bx bx-lock-alt'></i> Alterar Senha
                         </a>
-                        <a href="login.php" class="list-group-item list-group-item-action">
+                        <a href="src/pages/login.php" class="list-group-item list-group-item-action">
                             <i class='bx bxs-door-open'></i> Sair
                         </a>
                     </div>

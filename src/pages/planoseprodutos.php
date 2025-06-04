@@ -39,14 +39,14 @@ $usuarioLogado = isset($_SESSION['email']);
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="src/pages/indexsrc/pages/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="faleconosco.php">Fale conosco</a>
+            <a class="nav-link active" aria-current="page" href="src/pages/faleconosco.php">Fale conosco</a>
           </li>
           <?php if ($usuarioLogado): ?>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="cliente.php">Minha conta</a>
+              <a class="nav-link active" aria-current="page" href="src/pages/cliente.php">Minha conta</a>
             </li>
           <?php endif; ?>
 
@@ -62,11 +62,11 @@ $usuarioLogado = isset($_SESSION['email']);
 
     <?php if ($usuarioLogado): ?>
       <div>
-        <a href="sair.php"><button class="logout" type="submit">Desconectar-se</button></a>
+        <a href="src/pages/sair.php"><button class="logout" type="submit">Desconectar-se</button></a>
       </div>
     <?php else: ?>
       <div>
-        <a href="login.php"><button class="login" type="submit">Login</button></a>
+        <a href="src/pages/login.php"><button class="login" type="submit">Login</button></a>
       </div>
     <?php endif; ?>
 
@@ -183,7 +183,7 @@ $usuarioLogado = isset($_SESSION['email']);
     <div class="faleconosco">
       <p>atendimento:[dias e horas]</p>
       <p>Para maiores informações fale conosco</p>
-      <button><a href="faleconosco.php">Fale conosco</a></button>
+      <button><a href="src/pages/faleconosco.php">Fale conosco</a></button>
     </div>
 
   </div>
@@ -210,7 +210,7 @@ $usuarioLogado = isset($_SESSION['email']);
             </div>
             <div class="footer bg-dark"></div>
           </div>
-          <a href="sitebasico.php"><button class="btn-saiba">Saiba mais</button></a>
+          <a href="src/pages/sitebasico.php"><button class="btn-saiba">Saiba mais</button></a>
         </div>
       </div>
 
@@ -227,7 +227,7 @@ $usuarioLogado = isset($_SESSION['email']);
             </div>
             <div class="footer bg-primary"></div>
           </div>
-          <a href="siteintermedio.php"><button class="btn-saiba">Saiba mais</button></a>
+          <a href="src/pages/siteintermedio.php"><button class="btn-saiba">Saiba mais</button></a>
         </div>
       </div>
 
@@ -244,7 +244,7 @@ $usuarioLogado = isset($_SESSION['email']);
             </div>
             <div class="footer bg-success"></div>
           </div>
-          <a href="sitepro.php"><button class="btn-saiba">Saiba mais</button></a>
+          <a href="src/pages/sitepro.php"><button class="btn-saiba">Saiba mais</button></a>
         </div>
       </div>
 
@@ -268,7 +268,7 @@ $usuarioLogado = isset($_SESSION['email']);
         const email = form.querySelector("input[type='email']").value;
         const mensagem = form.querySelector("textarea").value;
 
-        fetch("enviar-email.php", {
+        fetch("src/pages/enviar-email.php", {
             method: "POST",
             headers: {
               "Content-Type": "application/x-www-form-urlencoded"

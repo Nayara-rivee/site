@@ -1,11 +1,11 @@
 <?php
 session_start();
-include_once('config.php');
+include_once('src/pages/config.php');
 // print_r($_SESSION);
 if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
-    header('Location: login.php');
+    header('Location: src/pages/loginsrc/pages/');
 }
 $logado = $_SESSION['email'];
 if (!empty($_GET['search'])) {
@@ -54,10 +54,10 @@ $result = $conexao->query($sql);
             </button>
         </div>
         <div class="d-flex">
-            <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+            <a href="src/pages/sair.php" class="btn btn-danger me-5">Sair</a>
         </div>
         <div class="d-flex">
-            <a href="index.php" class="btn btn-primary me-5">Início</a>
+            <a href="src/pages/index.php" class="btn btn-primary me-5">Início</a>
         </div>
     </nav>
     <br>
@@ -95,7 +95,7 @@ $result = $conexao->query($sql);
 
                     echo "<td>
                         
-                            <a class='btn btn-sm btn-danger' href='delete.php?id=$user_data[id]' title='Deletar'>
+                            <a class='btn btn-sm btn-danger' href='src/pages/delete.php?id=$user_data[id]' title='Deletar'>
                                 <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-trash-fill' viewBox='0 0 16 16'>
                                     <path d='M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z'/>
                                 </svg>
@@ -118,13 +118,13 @@ $result = $conexao->query($sql);
     });
 
     function searchData() {
-        window.location = 'sistema.php?search=' + search.value;
+        window.location = 'src/pages/sistema.php?search=' + search.value;
     }
 </script>
 <script>
   if (localStorage.getItem('usuarioLogado') !== 'true') {
     // Redirecionar se não estiver logado via localStorage
-    window.location.href = 'login.php';
+    window.location.href = 'src/pages/login.php';
   }
 </script>
 

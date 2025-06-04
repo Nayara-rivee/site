@@ -7,7 +7,7 @@ if (isset($_SESSION['erro_login'])) {
   unset($_SESSION['erro_login']);
 }
 
-include('config.php');
+include('src/pages/configsrc/pages/');
 
 if (isset($_POST['submit'])) {
   $nome = $_POST['nome'];
@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
   // Verificar se as senhas coincidem
   if ($senha !== $confirmarSenha) {
     $_SESSION['register_error'] = 'As senhas não coincidem.';
-    header("Location: login.php");
+    header("Location: src/pages/login.php");
     exit;
   }
 
@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 
   if ($stmtEmail->num_rows > 0) {
     $_SESSION['register_error'] = 'Este e-mail já está cadastrado! Tente recuperar a senha ou usar outro e-mail.';
-    header("Location: login.php");
+    header("Location: src/pages/login.php");
     exit;
   }
   $stmtEmail->close();
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
 
   if ($stmtName->num_rows > 0) {
     $_SESSION['register_error'] = 'Esse nome de usuário já existe! Tente outro.';
-    header("Location: login.php");
+    header("Location: src/pages/login.php");
     exit;
   }
   $stmtName->close();
@@ -60,11 +60,11 @@ if (isset($_POST['submit'])) {
   $stmtInsert->bind_param("ssssss", $nome, $sobrenome, $email, $telefone, $senha, $genero);
 
   if ($stmtInsert->execute()) {
-    header("Location: login.php");
+    header("Location: src/pages/login.php");
     exit;
   } else {
     $_SESSION['register_error'] = 'Erro ao cadastrar. Tente novamente.';
-    header("Location: login.php");
+    header("Location: src/pages/login.php");
     exit;
   }
 
@@ -222,7 +222,7 @@ if (isset($_POST['submit'])) {
 
     <div class="form sing-in form-container">
 
-      <form action="testLogin.php" method="POST" name="form1" id="form1">
+      <form action="src/pages/testLogin.php" method="POST" name="form1" id="form1">
         <div class="form-header-sing-in" id="login">
           <div class="title">
             <h1>Sing in</h1>
@@ -248,7 +248,7 @@ if (isset($_POST['submit'])) {
             required />
         </div>
         <div class="link-recup-senha">
-        <a href="solicitar_recuperacao.php">Esqueceu sua senha?</a>
+        <a href="src/pages/solicitar_recuperacao.php">Esqueceu sua senha?</a>
         </div>
         <div class="continue-button">
           <input class="inputSubmit" type="submit" name="submit" value="Enviar">

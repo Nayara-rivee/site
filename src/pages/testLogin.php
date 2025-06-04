@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('config.php');
+include_once('src/pages/config.php');
 
 if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
     $email = $_POST['email'];
@@ -33,11 +33,11 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
               <script>
                 document.addEventListener('DOMContentLoaded', function () {
                   localStorage.setItem('usuarioLogado', 'true');
-                  window.location.href = 'enderecocliente.php';
+                  window.location.href = 'src/pages/enderecocliente.php';
                 });
               </script>
               <noscript>
-                <meta http-equiv='refresh' content='0;url=sistema.php'>
+                <meta http-equiv='refresh' content='0;url=src/pages/sistema.php'>
               </noscript>
             </head>
             <body>
@@ -48,18 +48,18 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
             exit;
         } else {
             $_SESSION['erro_login'] = 'Senha incorreta!';
-            header('Location: login.php');
+            header('Location: src/pages/login.php');
             exit;
         }
     } else {
         $_SESSION['erro_login'] = 'E-mail não encontrado!';
-        header('Location: login.php');
+        header('Location: src/pages/login.php');
         exit;
     }
 
     $stmt->close();
 } else {
     $_SESSION['erro_login'] = 'Preencha todos os campos.';
-    header('Location: login.php');
+    header('Location: src/pages/login.php');
     exit;
 }

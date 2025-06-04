@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+include('src/pages/config.php');
 
 if (isset($_POST['nome']) && isset($_POST['sobrenome'])) {
     $nome = $_POST['nome'];

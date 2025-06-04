@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'])) {
       $stmt->bindParam(':email', $email);
       $stmt->execute();
 
-      $resetLink = "http://localhost/Aurorait/forgot_password.php?token=" . $token;
+      $resetLink = "http://localhost/Aurorait/src/pages/forgot_password.php?token=" . $token;
 
       $mail = new PHPMailer(true);
       $mail->isSMTP();

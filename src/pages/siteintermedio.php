@@ -151,7 +151,7 @@
             <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
           </div>
           <div class="button-form">
-            <button><a href="index.php">Fazer orçamento</a></button>
+            <button><a href="src/pages/index.php">Fazer orçamento</a></button>
           </div>
 
         </form>

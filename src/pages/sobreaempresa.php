@@ -31,22 +31,22 @@ $usuarioLogado = isset($_SESSION['email']);
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="src/pages/index.php">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Produtos e Planos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item " href="planoseprodutos.php">Planos</a></li>
-                            <li><a class="dropdown-item" href="planoseprodutos.php">Produtos</a></li>
+                            <li><a class="dropdown-item " href="src/pages/planoseprodutos.php">Planos</a></li>
+                            <li><a class="dropdown-item" href="src/pages/planoseprodutos.php">Produtos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="faleconosco.php">Fale conosco</a>
+                        <a class="nav-link active" aria-current="page" href="src/pages/faleconosco.php">Fale conosco</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Sobre a empresa</a>
+                        <a class="nav-link active" aria-current="page" href="src/pages/index.php">Sobre a empresa</a>
                     </li>
 
                 </ul>
@@ -353,10 +353,10 @@ $usuarioLogado = isset($_SESSION['email']);
                 <div class="col-md-4 mb-4">
                     <h5>Links úteis</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.php">Quem somos</a></li>
-                        <li><a href="index.php">Serviços</a></li>
-                        <li><a href="faleconosco.php">Contato</a></li>
-                        <li><a href="cliente.php">Área do cliente</a></li>
+                        <li><a href="src/pages/index.php">Quem somos</a></li>
+                        <li><a href="src/pages/index.php">Serviços</a></li>
+                        <li><a href="src/pages/faleconosco.php">Contato</a></li>
+                        <li><a href="src/pages/cliente.php">Área do cliente</a></li>
                         <li><a href="#conheca-cada-um-de-nos">Conheça cada um de nós</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -364,7 +364,7 @@ $usuarioLogado = isset($_SESSION['email']);
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#redes">Redes</a></li>
-                                <li><a class="dropdown-item" href="planoseprodutos.php">Modelos</a></li>
+                                <li><a class="dropdown-item" href="src/pages/planoseprodutos.php">Modelos</a></li>
                             </ul>
                         </li>
                     </ul>

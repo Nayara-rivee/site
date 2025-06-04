@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'])) {
         $stmt->execute();
 
         // Link de recuperação
-        $resetLink = "http://localhost/Aurorait/forgot_password.php?token=" . $token;
+        $resetLink = "http://localhost/Aurorait/src/pages/forgot_password.php?token=" . $token;
 
         // Enviar e-mail com PHPMailer
         $mail = new PHPMailer(true);

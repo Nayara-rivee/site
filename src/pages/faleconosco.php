@@ -83,7 +83,7 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form action="forms/src/pages/contact.php" method="post" role="form" class="php-email-form">
                       <div class="row">
                         <div class="col-md-6 form-group">
                           <div class="input-group">
@@ -153,7 +153,7 @@
       <img src="../img/espaco.svg" alt="">
     </div>
     <h5 class="agradecimento">Muito obrigado por nos acompanhar!</h5>
-    <button class="voltar"><a href="index.php">voltar para o início</a></button>
+    <button class="voltar"><a href="src/pages/index.php">voltar para o início</a></button>
     
   </div>
 
@@ -173,8 +173,8 @@
           <ul class="list-unstyled">
             <li><a href="#div-empresa">Quem somos</a></li>
             <li><a href="#servicos">Serviços</a></li>
-            <li><a href="faleconosco.php">Contato</a></li>
-            <li><a href="cliente.php">Área do cliente</a></li>
+            <li><a href="src/pages/faleconosco.php">Contato</a></li>
+            <li><a href="src/pages/cliente.php">Área do cliente</a></li>
           </ul>
         </div>
 

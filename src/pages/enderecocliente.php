@@ -1,9 +1,9 @@
 <?php
 session_start();
-include_once('config.php');
+include_once('src/pages/config.php');
 
 if (!isset($_SESSION['email'])) {
-    header('Location: login.php');
+    header('Location: src/pages/login.php');
     exit;
 }
 
@@ -34,12 +34,12 @@ $result = $conexao->query($sql);
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg bg-body-primary bg-dark">
         <div>
-            <a href="index.php"><button class="voltar" type="submit">Home</button></a>
+            <a href="src/pages/index.php"><button class="voltar" type="submit">Home</button></a>
         </div>
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="index.php"><b>AuroraIT</b></a>
+            <a class="navbar-brand text-white" href="src/pages/index.php"><b>AuroraIT</b></a>
             <div class="d-flex">
-                <a href="sair.php" class="btn btn-danger">Sair</a>
+                <a href="src/pages/sair.php" class="btn btn-danger">Sair</a>
             </div>
         </div>
     </nav>
@@ -53,22 +53,22 @@ $result = $conexao->query($sql);
             <div class="row gx-3 menu-lateral">
                 <div class="col-lg-3">
                     <div class="list-group">
-                        <a href="dadoscliente.php" class="list-group-item list-group-item-action text-dark">
+                        <a href="src/pages/dadoscliente.php" class="list-group-item list-group-item-action text-dark">
                             <i class='bx bx-user'></i> Dados Pessoais
                         </a>
-                        <a href="dadoscliente.php" class="list-group-item list-group-item-action text-dark">
+                        <a href="src/pages/dadoscliente.php" class="list-group-item list-group-item-action text-dark">
                             <i class='bx bx-phone'></i> Contatos
                         </a>
-                        <a href="enderecocliente.php" class="list-group-item list-group-item-action bg-danger text-light">
+                        <a href="src/pages/enderecocliente.php" class="list-group-item list-group-item-action bg-danger text-light">
                             <i class='bx bx-home'></i> Endereço
                         </a>
-                        <a href="pedidoscliente.php" class="list-group-item list-group-item-action text-dark">
+                        <a href="src/pages/pedidoscliente.php" class="list-group-item list-group-item-action text-dark">
                             <i class='bx bxs-truck'></i> Pedidos
                         </a>
-                        <a href="itensfavoritoscliente.php" class="list-group-item list-group-item-action text-dark">
+                        <a href="src/pages/itensfavoritoscliente.php" class="list-group-item list-group-item-action text-dark">
                             <i class='bx bx-heart'></i> Favoritos
                         </a>
-                        <a href="senha.php" class="list-group-item list-group-item-action text-dark">
+                        <a href="src/pages/senha.php" class="list-group-item list-group-item-action text-dark">
                             <i class='bx bx-lock-alt'></i> Alterar Senha
                         </a>
 
@@ -105,7 +105,7 @@ $result = $conexao->query($sql);
                                         <td><?= $user_data['senha'] ?></td>
                                         <td><?= $user_data['email'] ?></td>
                                         <td>
-                                            <a class="btn btn-sm btn-danger" href="delete.php?id=<?= $user_data['id'] ?>" title="Deletar">
+                                            <a class="btn btn-sm btn-danger" href="src/pages/delete.php?id=<?= $user_data['id'] ?>" title="Deletar">
                                                 <i class='bx bx-trash'></i>
                                             </a>
                                         </td>

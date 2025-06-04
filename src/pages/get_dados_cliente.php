@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
-require_once 'config.php'; // conexão com o banco
+require_once 'src/pages/config.php'; // conexão com o banco
 
 $email = $_GET['email'] ?? '';
 

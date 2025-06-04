@@ -29,7 +29,7 @@ if (!$user) {
 </head>
 <body>
     <h2>Redefinir Senha</h2>
-    <form action="reset_password_action.php" method="POST">
+    <form action="src/pages/reset_password_action.php" method="POST">
         <input type="hidden" name="token" value="<?= htmlspecialchars($token) ?>">
         <label for="new_password">Nova Senha:</label><br>
         <input type="password" name="new_password" required><br><br>
