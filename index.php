@@ -11,21 +11,35 @@ $usuarioLogado = isset($_SESSION['email']);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <!-- Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/home.css" />
-  <link rel="stylesheet" href="./css/baner.css">
+  <link rel="stylesheet" href="./css/HomE.css" />
+  <link rel="stylesheet" href="./css/banner.css">
+  <link rel="stylesheet" href="./css-globais/css/Navbar.css">
+  <link rel="stylesheet" href="./css-globais/css/templates.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./css/acessibilidade.css">
+  <link rel="stylesheet" href="./css/templates.css">
+
   <script defer src="./js/acessibilidade.js"></script>
 
-  <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -107,19 +121,75 @@ $usuarioLogado = isset($_SESSION['email']);
     <?php endif; ?>
 
   </nav>
-  <div class="introducao">
 
-    <div class="texto">
-      <h1>Crie seu prórpio website e comece no mundo da tecnologia hoje</h1>
-      <p>
-        Monte seu prórpio website e ingresse no mundo da tecnologia sem limites
-      </p>
-      <a href="planoseprodutos.php" class="link"><button class="botao-criar">Criar website</button></a>
+  <!-- Hero Section -->
+  <section id="hero" class="hero section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+
+          <h1 class="hero-title mb-4">Accelerating business growth through innovative technology</h1>
+
+          <p class="hero-description mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.</p>
+
+          <div class="cta-wrapper">
+            <a href="#" class="btn btn-primary">Discover More</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-image">
+            <img src="./img/inicio.svg" alt="Business Growth" class="img-fluid" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="row feature-boxes">
+        <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-box">
+            <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Sites Responsivos</h3>
+              <p class="feature-text">Sites que se adaptam a qualquer dispositivo, proporcionando a melhor experiência ao usuário.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-box">
+            <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+              <i class="bi bi-window"></i>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Lojas Virtuais</h3>
+              <p class="feature-text">Comércio eletrônico moderno com design atrativo e ferramentas para aumentar suas vendas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-box">
+            <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+              <i class="bi bi-headset"></i>
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Otimização SEO</h3>
+              <p class="feature-text">Melhoramos o posicionamento do seu site no Google e atraímos mais visitantes qualificados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="img-introducao">
-      <img src="./img/undraw_designer_efwz.svg" alt="" />
-    </div>
-  </div>
+
+  </section><!-- /Hero Section -->
+
   <br /><br /><br />
   <div class="oferecimento">
     <h1>Construa seu futuro no mundo virtual agora!</h1>
@@ -164,37 +234,84 @@ $usuarioLogado = isset($_SESSION['email']);
       </div>
     </div>
   </div>
-  <br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
 
 
   <!-- Seção Serviços -->
-  <section class="servicos py-36 bg-white text-white">
-    <div class="container" id="servicos">
+  <section id="services" class="services section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
       <h2 class="text-center text-3xl md:text-4xl font-bold mb-12 text-black">Nossos Serviços</h2>
-      <div class="row g-4">
-        <div class="servico1 col-md-4">
-          <div class="servico1-texts bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
-            <h3 class="fs-4 font-bold mb-2">Sites Responsivos</h3>
-            <p>Sites que se adaptam a qualquer dispositivo, proporcionando a melhor experiência ao usuário.</p>
-          </div>
-        </div>
-        <div class="servico2 col-md-4">
-          <div class="servico2-texts bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
-            <h3 class=" text-xl font-bold mb-2">Lojas Virtuais</h3>
-            <p>Comércio eletrônico moderno com design atrativo e ferramentas para aumentar suas vendas.</p>
-          </div>
-        </div>
-        <div class="servico3 col-md-4">
-          <div class="servico3-texts bg-escuro p-5 rounded-lg shadow hover:bg-roxo transition-all">
-            <h3 class="text-xl font-bold mb-2">Otimização SEO</h3>
-            <p>Melhoramos o posicionamento do seu site no Google e atraímos mais visitantes qualificados.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </div><!-- End Section Title -->
 
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row justify-content-center g-5">
+
+        <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="service-item">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z" />
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Sites Responsivos</h3>
+              <p>Sites que se adaptam a qualquer dispositivo, proporcionando a melhor experiência ao usuário.</p>
+              <a href="#" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+          <div class="service-item">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z" />
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Lojas Virtuais</h3>
+              <p>Comércio eletrônico moderno com design atrativo e ferramentas para aumentar suas vendas.</p>
+              <a href="#" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="service-item">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-brush" viewBox="0 0 16 16">
+                <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z" />
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Otimização SEO</h3>
+              <p>Melhoramos o posicionamento do seu site no Google e atraímos mais visitantes qualificados.</p>
+              <a href="#" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+
+
+      </div>
+
+    </div>
+
+  </section><!-- /Services Section -->
+
+
+  <br><br>
 
 
 
@@ -319,61 +436,33 @@ $usuarioLogado = isset($_SESSION['email']);
           </p>
         </div>
       </div>
-
-      <div class="video6">
-        <div class="bg-button">
-          <button class="botao" id="play6">
-            <span class="op-play"></span>
-          </button>
-        </div>
-        <div class="modal" id="video6">
-          <div class="modal_container">
-            <span class="close" data-modal="video6">&times;</span>
-            <div class="iframe_container">
-              <iframe width="560" height="315" src="./img/2024-11-29 19-46-56.mp4" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="descricao">
-          <h1>Site dinâmico</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Dignissimos libero harum corporis porro laboriosam quibusdam
-            consequatur nam iure sit perspiciatis consectetur officia enim
-            repellendus asperiores, dolorem hic sint facere at!
-          </p>
-        </div>
-      </div>
     </div>
   </div>
 
   <br />
-  <div class="borda-gradiente">
-    <div class="contato">
-      <img src="./img/comunidade.svg" alt="" />
-      <h1>Venha ser parte de nossa comunidade e ficar por dentro de tudo!</h1>
-      <form name="form1" id="form1" method="POST" action="comunidade_processa.php">
-        <div class="name">
-          <label for="name">Nome</label>
-          <input type="text" name="nome_comunidade" id="firstname" placeholder="Seu nome na comunidade" required />
-        </div>
-        <div class="email">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Digite seu email" required />
-        </div>
-        <div class="tell">
-          <label for="number">Celular</label>
-          <input type="text" name="telefone_comunidade" id="number" placeholder="Celular com DDD (somente números)" required />
-        </div>
-        <div class="button-form">
-          <button><a href="index.php" type="submit">Fazer parte</a></button>
-        </div>
-      </form>
-    </div>
+
+  <div class="contato">
+    <img src="./img/comunidade.svg" alt="" />
+    <h1>Venha ser parte de nossa comunidade e ficar por dentro de tudo!</h1>
+    <form name="form1" id="form1" method="POST" action="comunidade_processa.php">
+      <div class="name">
+        <label for="name">Nome</label>
+        <input type="text" name="nome_comunidade" id="firstname" placeholder="Seu nome na comunidade" required />
+      </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required />
+      </div>
+      <div class="tell">
+        <label for="number">Celular</label>
+        <input type="text" name="telefone_comunidade" id="number" placeholder="Celular com DDD (somente números)" required />
+      </div>
+      <div class="button-form">
+        <button><a href="index.php" type="submit">Fazer parte</a></button>
+      </div>
+    </form>
   </div>
+
 
   <div class="div-empresa" id="div-empresa">
     <h1>Quem somos nós</h1>
@@ -448,7 +537,7 @@ $usuarioLogado = isset($_SESSION['email']);
       </div>
     </div>
 
-    <div class="hero">
+    <div class="hero-banner">
       <div class="content">
         <h1>Conheça um pouco<br>mais de nossa equipe</h1>
         <hr>
@@ -506,6 +595,19 @@ $usuarioLogado = isset($_SESSION['email']);
     </div>
   </footer>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./js/main.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/inicio.js"></script>
   <script src="./js/mod.js"></script>

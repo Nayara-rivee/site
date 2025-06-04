@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planos Dinâmicos</title>
+  <style>
+    .cards {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      width: 280px;
+      background: #fff;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .mini-site {
+      background: #f2f2f2;
+      padding: 8px;
+      border-radius: 8px;
+      margin: 16px 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .top-bar,
+    .bottom-bar {
+      height: 10px;
+      background: #333;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .layout {
+      display: flex;
+      margin: 8px 0;
+    }
+
+    .sidebar {
+      width: 40px;
+      background: #444;
+      border-radius: 4px;
+      height: 100px;
+      transition: background-color 0.3s ease;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-left: 6px;
+      flex: 1;
+    }
+
+    .content-box {
+      height: 16px;
+      background: #666;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-bar {
+      height: 10px;
+      background: #999;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-section {
+      height: 20px;
+      background: #bbb;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .ads {
+      width: 20px;
+      background: #888;
+      margin-left: 6px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .pro-layout {
+      display: flex;
+    }
+
+    .colors {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .color {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .color.red {
+      background: #f44336;
+    }
+
+    .color.purple {
+      background: #673ab7;
+    }
+
+    .color.teal {
+      background: #00bcd4;
+    }
+
+    .color.yellow {
+      background: #ffeb3b;
+    }
+
+    .color:hover {
+      border-color: #000;
+    }
+
+    .backgrounds button {
+      margin: 0 4px;
+      padding: 4px 8px;
+      border: none;
+      background: #eee;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .backgrounds button:hover {
+      background-color: #ddd;
+    }
+
+    .saiba-mais {
+      background: #0f0;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .saiba-mais:hover {
+      background-color: #0c0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cards">
+    <!-- PLANO BÁSICO -->
+    <div class="card">
+      <h3>Plano Básico</h3>
+      <div class="mini-site">
+        <div class="top-bar"></div>
+        <div class="layout">
+          <div class="sidebar"></div>
+          <div class="main">
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+          </div>
+        </div>
+        <div class="bottom-bar"></div>
+      </div>
+      <p>Escolha uma cor:</p>
+      <div class="colors">
+        <span class="color red"></span>
+        <span class="color purple"></span>
+        <span class="color teal"></span>
+        <span class="color yellow"></span>
+      </div>
+      <p>Cor de fundo:</p>
+      <div class="backgrounds">
+        <button>Branco</button>
+        <button>Cinza</button>
+        <button>Preto</button>
+      </div>
+      <button class="saiba-mais">Saiba mais</button>
+    </div>
+
+    <!-- PLANO INTERMEDIÁRIO -->
+    <div class="card">
+      <h3>Plano Intermediário</h3>
+      <div class="mini-site">
+        <div class="top-bar"></div>
+        <div class="layout">
+          <div class="sidebar"></div>
+          <div class="main">
+            <div class="nav-bar"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+          </div>
+        </div>
+        <div class="bottom-bar"></div>
+      </div>
+      <p>Escolha uma cor:</p>
+      <div class="colors">
+        <span class="color red"></span>
+        <span class="color purple"></span>
+        <span class="color teal"></span>
+        <span class="color yellow"></span>
+      </div>
+      <p>Cor de fundo:</p>
+      <div class="backgrounds">
+        <button>Branco</button>
+        <button>Cinza</button>
+        <button>Preto</button>
+      </div>
+      <button class="saiba-mais">Saiba mais</button>
+    </div>
+
+    <!-- PLANO PRO -->
+    <div class="card">
+      <h3>Plano Pro</h3>
+      <div class="mini-site">
+        <div class="top-bar"></div>
+        <div class="layout pro-layout">
+          <div class="sidebar"></div>
+          <div class="main">
+            <div class="nav-bar"></div>
+            <div class="hero-section"></div>
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+          </div>
+          <div class="ads"></div>
+        </div>
+        <div class="bottom-bar"></div>
+      </div>
+      <p>Escolha uma cor:</p>
+      <div class="colors">
+        <span class="color red"></span>
+        <span class="color purple"></span>
+        <span class="color teal"></span>
+        <span class="color yellow"></span>
+      </div>
+      <p>Cor de fundo:</p>
+      <div class="backgrounds">
+        <button>Branco</button>
+        <button>Cinza</button>
+        <button>Preto</button>
+      </div>
+      <button class="saiba-mais">Saiba mais</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      const colorMap = {
+        red: '#f44336',
+        purple: '#673ab7',
+        teal: '#00bcd4',
+        yellow: '#ffeb3b'
+      };
+
+      const bgMap = {
+        'Branco': '#fff',
+        'Cinza': '#f2f2f2',
+        'Preto': '#333'
+      };
+
+      const miniSite = card.querySelector('.mini-site');
+      const topBar = miniSite.querySelector('.top-bar');
+      const sidebar = miniSite.querySelector('.sidebar');
+      const mainDivs = miniSite.querySelectorAll('.main > div');
+      const bottomBar = miniSite.querySelector('.bottom-bar');
+
+      card.querySelectorAll('.colors .color').forEach(colorEl => {
+        colorEl.addEventListener('click', () => {
+          const colorClass = Array.from(colorEl.classList).find(c => Object.keys(colorMap).includes(c));
+          const color = colorMap[colorClass] || '#000';
+
+          topBar.style.backgroundColor = color;
+          sidebar.style.backgroundColor = color;
+          mainDivs.forEach(div => div.style.backgroundColor = color);
+          bottomBar.style.backgroundColor = color;
+        });
+      });
+
+      card.querySelectorAll('.backgrounds button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const bgColor = bgMap[btn.textContent] || '#fff';
+          miniSite.style.backgroundColor = bgColor;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

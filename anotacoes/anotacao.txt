@@ -1,1 +1,6 @@
-- ajeitar link do botão "criar website"
+- ajeitar link do botão "criar website" 
+-por api do form d fale conosco
+-por o nome dos serviços(home)=> pendrive
+-baixar bootstrapicon(por conta dos icones nos templates)
+-por o email da empresa no site, 
+-ver o form de zap dos sites em planos

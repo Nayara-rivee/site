@@ -1,0 +1,18 @@
+  /* rodapé */
+
+    footer {
+    margin-top: -100px;
+      background: #0e0d0d;
+      color: #ffffff;
+      position: relative;
+      border: 5px solid; /* obrigatória */
+      border-image: linear-gradient(to right, #242424, #1a1919);
+      border-image-slice: 1;
+    }
+    footer a {
+      color: #adb5bd;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #ffffff;
+    }

@@ -1,4 +1,4 @@
-  .hero {
+  .hero-banner {
     position: relative;
 
     background-size: cover;
@@ -12,7 +12,7 @@
 
   }
   
-  .hero::before{
+  .hero-banner::before{
     content: "";
     position: absolute;
     inset: 0;
@@ -42,8 +42,8 @@
     font-size: 1.5rem;
     color: #fff;
   }
-.hero .botao-criar {
-    background: #9393f0;
+.hero-banner .botao-criar {
+    background: #287697;
     color: #fff;
     transition: 1s;
     position: relative;
@@ -52,11 +52,12 @@
     border-radius: 20px;
     height: 50px;
     width: 300px;
+    border: none;
   }
   
-.hero .botao-criar:hover {
-    background: none; /* preto no hover */
-    border:3px solid #9393f0;
+.hero-banner .botao-criar:hover {
+    background: #11303d;
+    border:none;
     color: #fff;
     transition: 1s;
   }
