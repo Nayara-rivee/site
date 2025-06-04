@@ -9,8 +9,8 @@ $usuarioLogado = isset($_SESSION['email']);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/Planos.css">
-  <link rel="stylesheet" href="./css-globais/css/Navbar.css">
+  <link rel="stylesheet" href="../css/Planos.css">
+  <link rel="stylesheet" href="../css-globais/css/Navbar.css">
   <title>Document</title>
 
   <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
@@ -18,7 +18,7 @@ $usuarioLogado = isset($_SESSION['email']);
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./css/responsive3.css">
+  <link rel="stylesheet" href="../css/responsive3.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -31,7 +31,7 @@ $usuarioLogado = isset($_SESSION['email']);
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <img src="./img/logo.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
+      <img src="../img/logo.png" alt="Logo" width="280" height="120" class="d-inline-block align-text-top" />
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -96,7 +96,7 @@ $usuarioLogado = isset($_SESSION['email']);
                   </ul>
                 </div>
                 <div class="col-md-6 position-relative">
-                  <img src="./img/imagem1.jpeg" class="d-block w-100 rounded shadow" alt="Plano Básico" />
+                  <img src="../img/imagem1.jpeg" class="d-block w-100 rounded shadow" alt="Plano Básico" />
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@ $usuarioLogado = isset($_SESSION['email']);
                   </ul>
                 </div>
                 <div class="col-md-6 position-relative">
-                  <img src="./img/imagem2.jpeg" class="d-block w-100 rounded shadow"
+                  <img src="../img/imagem2.jpeg" class="d-block w-100 rounded shadow"
                     alt="Plano Intermediário" />
                 </div>
               </div>
@@ -137,7 +137,7 @@ $usuarioLogado = isset($_SESSION['email']);
                   </ul>
                 </div>
                 <div class="col-md-6 position-relative">
-                  <img src="./img/imagem1.jpeg" class="d-block w-100 rounded shadow"
+                  <img src="../img/imagem1.jpeg" class="d-block w-100 rounded shadow"
                     alt="Plano Profissional" />
                 </div>
               </div>
@@ -176,7 +176,7 @@ $usuarioLogado = isset($_SESSION['email']);
   <br><br><br><br><br>
 
   <div class="atendimento">
-    <img src="./img/criatividade.svg" alt="">
+    <img src="../img/criatividade.svg" alt="">
     <h1>Área de livre criatividade só aqui</h1>
     <p>Se você deseja criar seu website sem que haja barreiras e diversas limitações, aqui você é livre para escolher o
       que quiser para brincar com a criatividade</p>
@@ -252,8 +252,8 @@ $usuarioLogado = isset($_SESSION['email']);
   </div>
 
 
-  <script src="./js/mod.js"></script>
-  <script src="./js/planoseprodutos.js"></script>
+  <script src="../js/mod.js"></script>
+  <script src="../js/planoseprodutos.js"></script>
   <!-- Bootstrap + Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>

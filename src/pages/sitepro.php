@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/Sitesdinamico.css">
+    <link rel="stylesheet" href="../css/Sitesdinamico.css">
     <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -52,7 +52,7 @@
     <div class="container">
         <div class="components">
             <div class="container-image">
-                <img src="./img/undraw_vibe-coding_mjme.svg" alt="">
+                <img src="../img/undraw_vibe-coding_mjme.svg" alt="">
             </div>
             <div class="introducao">
                 <h1>A dinânimas mais diferente que você verá para seus sites</h1>
@@ -73,7 +73,7 @@
                     <div class="modal_container">
                         <span class="close" data-modal="video1">&times;</span>
                         <div class="iframe_container">
-                            <iframe width="560" height="315" src="./img/2024-11-29 19-46-56.mp4"
+                            <iframe width="560" height="315" src="../img/2024-11-29 19-46-56.mp4"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -96,7 +96,7 @@
                     <div class="modal_container">
                         <span class="close" data-modal="video2">&times;</span>
                         <div class="iframe_container">
-                            <iframe width="560" height="315" src="./img/2024-11-29 16-43-52.mp4"
+                            <iframe width="560" height="315" src="../img/2024-11-29 16-43-52.mp4"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -113,7 +113,7 @@
     </div>
 
     <div class="contato">
-        <img src="./img/orcamento.svg" alt="" />
+        <img src="../img/orcamento.svg" alt="" />
         <h1>Faça suas preferëncias</h1>
         <form name="form1" id="form1" method="POST" action="#">
             <div class="name">
@@ -158,7 +158,7 @@
             <p>facebook</p>
         </div>
     </div>
-    <script src="./js/sitedinamico.js"></script>
+    <script src="../js/sitedinamico.js"></script>
 </body>
 
 </html>

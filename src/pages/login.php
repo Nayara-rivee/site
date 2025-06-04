@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Syne+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/registro.css" />
+  <link rel="stylesheet" href="../css/registro.css" />
 
   <title>Formulário de Cadastro</title>
 </head>
@@ -93,7 +93,7 @@ if (isset($_POST['submit'])) {
   <div class="container" id="container">
     <div class="form-image">
       <div class="toggle">
-        <img src="./img/undraw_workspace_s6wf.svg" alt="" />
+        <img src="../img/undraw_workspace_s6wf.svg" alt="" />
         <div class="toggle-panel toggle-left">
           <h1>Hello, friend!</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -263,7 +263,7 @@ if (isset($_POST['submit'])) {
 
   </div>
 
-  <script src="./js/login.js"></script>
+  <script src="../js/login.js"></script>
   
 
 

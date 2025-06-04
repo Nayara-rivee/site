@@ -18,11 +18,11 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="./css/Faleconosco.css">
-  <link rel="stylesheet" href="./css-globais/css/rodape.css">
+  <link rel="stylesheet" href="../css/Faleconosco.css">
+  <link rel="stylesheet" href="../css-globais/css/rodape.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css-globais/css/templates.css">
+  <link rel="stylesheet" href="../css-globais/css/templates.css">
 
 
 </head>
@@ -150,7 +150,7 @@
 
     <h1 class="boas-vindas">Seja Bem-vindo!</h1>
     <div class="img2">
-      <img src="./img/espaco.svg" alt="">
+      <img src="../img/espaco.svg" alt="">
     </div>
     <h5 class="agradecimento">Muito obrigado por nos acompanhar!</h5>
     <button class="voltar"><a href="index.php">voltar para o início</a></button>
@@ -163,7 +163,7 @@
       <div class="row">
         <!-- Logo -->
         <div class="col-md-4 mb-4">
-          <img src="./img/logo.png" alt="Logo da Empresa" style="width: 250px; margin-bottom: 10px;">
+          <img src="../img/logo.png" alt="Logo da Empresa" style="width: 250px; margin-bottom: 10px;">
           <p class="small">Criamos sites modernos e personalizados para empresas de todos os portes.</p>
         </div>
 
