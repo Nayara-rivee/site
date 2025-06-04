@@ -56,8 +56,7 @@
             </div>
             <div class="introducao">
                 <h1>As dinânimas mais diferente que você verá para seus sites</h1>
-                <p>Com nossos sites vocês podem explorar a dinÂnima com seus clientes. Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Accusamus sit rerum nulla totam earum veniam aut. A, quas aliquid
+                <p>Com nossos sites vocês podem explorar a dinÂnima com seus clientes. Para pequenas empresas. Até 6 seções, galeria de fotos, WhatsApp, formulário e site responsivo. Accusamus sit rerum nulla totam earum veniam aut. A, quas aliquid
                     nihil quis consequatur quam suscipit nobis at voluptatem, perferendis incidunt expedita.</p>
                 <button><a href="planoseprodutos.html">assine já!</a></button>
             </div>
@@ -115,8 +114,8 @@
     </div>
 
     <div class="contato">
-        <img src="./img/computador.png" alt="" />
-        <h1>Venha acertar seu orçamento!</h1>
+        <img src="./img/orcamento.svg" alt="" />
+        <h1>Faça suas preferëncias</h1>
         <form name="form1" id="form1" method="POST" action="#">
           <div class="name">
             <label for="name">Nome</label>
